@@ -1691,11 +1691,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\Object.csproj",
+      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj",
       "projectName": "Object",
-      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\Object.csproj",
+      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj",
       "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\obj\\",
+      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

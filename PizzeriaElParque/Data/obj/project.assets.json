@@ -1713,11 +1713,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Data\\Data.csproj",
+      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj",
       "projectName": "Data",
-      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Data\\Data.csproj",
+      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj",
       "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Data\\obj\\",
+      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1736,8 +1736,8 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\Object.csproj": {
-              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\Object.csproj"
+            "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj": {
+              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj"
             }
           }
         }

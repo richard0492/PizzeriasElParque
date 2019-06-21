@@ -1736,11 +1736,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
+      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
       "projectName": "Logic",
-      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
+      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
       "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Logic\\obj\\",
+      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Logic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -1759,11 +1759,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Data\\Data.csproj"
+            "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj"
             },
-            "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\Object.csproj": {
-              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriaElParque\\PizzeriaElParque\\Object\\Object.csproj"
+            "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj": {
+              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj"
             }
           }
         }
