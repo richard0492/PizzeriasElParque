@@ -1,0 +1,107 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="NestedAdmin.master.cs" Inherits="PizzeríaElParque.PrincipalAnidada" %>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form id="formOut" runat="server">
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <center> <h1 style="color:white; font-size:20px">Administrador</h1></center>
+            <br />
+             <center><asp:Label ID="lbNombre" runat="server" Text="Nombre" Font-Bold="True" Font-Size="Medium" ForeColor="White"></asp:Label> </center>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <hr>
+                    <li>
+                        <a href="#"><i class="fa fa-list fa-2x"></i>Administrar Producto<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="AddProduct.aspx">Agregar Productos</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="DisableProduct.aspx">Inhabilitar Producto</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="ModifyProduct.aspx">Modificar Producto</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="ListProduct.aspx">Listar Productos</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-list fa-2x"></i>Administrar Usuarios<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="AddUser.aspx">Agregar Usuarios</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="DisableUser.aspx">Inhabilitar Usuario</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="ModifyUser.aspx">Modificar Usuario</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="ListUser.aspx">Listar Usuarios</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-list fa-2x"></i>Administrar Órdenes <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="AddOrderAdmin.aspx">Agregar nueva Orden</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="ListOrderAdmin.aspx">Estados de orden</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="#"><i class="fa fa-list fa-2x"></i>Reportes <span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="DailyReport.aspx">Diarios</a>
+                            </li>
+                            <br />
+                            <li>
+                                <a href="BetweenDates.aspx">Entre fechas</a>
+                            </li>
+
+                        </ul>
+                    </li>
+                    <hr>
+                    <li>
+
+                        <center> <asp:LinkButton class="btn btn-info btn-lg, btn btn-primary" ID="btnLogout" runat="server" OnClick="btnLogout_Click"><i class="fa fa-sign-out"></i> Cerrar Sesión</asp:LinkButton></center>
+
+                    </li>
+                </ul>
+
+            </div>
+
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</asp:Content>

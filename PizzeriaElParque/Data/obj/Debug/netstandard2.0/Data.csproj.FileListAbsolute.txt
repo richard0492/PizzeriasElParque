@@ -1,0 +1,24 @@
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\bin\Debug\netstandard2.0\Data.deps.json
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\bin\Debug\netstandard2.0\Data.dll
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\bin\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.dll
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Data\obj\Debug\netstandard2.0\Data.pdb
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.deps.json
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.dll
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.dll
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.pdb

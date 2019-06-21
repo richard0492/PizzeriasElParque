@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="NestedCashier.master.cs" Inherits="PizzeríaElParque.NestedCashier" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form runat="server">
+        <!-- /. NAV TOP  -->
+        <nav class="navbar-default navbar-side" role="navigation">
+            <center> <h1 style="color:white;font-size:20px">Cajero</h1></center>
+            <br />
+             <center><asp:Label ID="lbNombre" runat="server" Text="Nombre" Font-Bold="True" Font-Size="Medium" ForeColor="White"></asp:Label> </center>
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                    <hr>
+                    <li>
+                        <a href="AddOrderCashier.aspx"><i class="fa fa-edit fa-2x"></i>Agregar Orden</a>
+                    </li>
+                    <br />
+
+                    <li>
+                        <a href="ListOrderCashier.aspx"><i class="fa fa-edit fa-2x"></i>Ordenes Actuales</a>
+                    </li>
+                    <br />
+                    <li>
+                        <center> <asp:LinkButton class="btn btn-info btn-lg, btn btn-primary" ID="btnLogout" runat="server" OnClick="btnLogout_Click"><i class="fa fa-sign-out"></i> Cerrar Sesión</asp:LinkButton></center>
+                    </li>
+        </nav>
+        <!-- /. NAV SIDE  -->
+        <div id="page-wrapper">
+            <div id="page-inner">
+                <div>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+    </form>
+</asp:Content>

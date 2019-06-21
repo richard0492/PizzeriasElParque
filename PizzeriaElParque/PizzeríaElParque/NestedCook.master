@@ -1,0 +1,20 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="NestedCook.master.cs" Inherits="PizzeríaElParque.NestedCook" %>
+
+
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form id="formOut" runat="server">
+        <div id="menuChef">
+            <center>Cocinero/a:</center>
+            <center><asp:Label ID="lbNombre" runat="server" Text="Nombre" Font-Bold="True" Font-Size="Medium" ForeColor="White"></asp:Label> </center>
+            <center><asp:LinkButton class="btn btn-info btn-lg, btn btn-primary" ID="btnLogout" runat="server" OnClick="btnLogout_Click"><i class="fa fa-sign-out"></i> Cerrar Sesión</asp:LinkButton></center>
+            <br />
+        </div>
+        <br />
+        <div class="well">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</asp:Content>

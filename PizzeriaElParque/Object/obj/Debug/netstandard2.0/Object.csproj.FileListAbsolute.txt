@@ -1,0 +1,16 @@
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\bin\Debug\netstandard2.0\Object.deps.json
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\bin\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\obj\Debug\netstandard2.0\Object.csproj.CoreCompileInputs.cache
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\obj\Debug\netstandard2.0\Object.AssemblyInfoInputs.cache
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\obj\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\I Ciclo 2019 UCR\Ingeniería\PizzeriaELParque1\Object\obj\Debug\netstandard2.0\Object.pdb
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.deps.json
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csproj.CoreCompileInputs.cache
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfoInputs.cache
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb
