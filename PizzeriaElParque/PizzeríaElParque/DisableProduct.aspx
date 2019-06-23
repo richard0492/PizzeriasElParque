@@ -1,10 +1,12 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/NestedAdmin.master" AutoEventWireup="true" CodeBehind="DisableProduct.aspx.cs" Inherits="PizzeríaElParque.DisableProduct" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
     <div class="row">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-body">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <center>
                     <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box;
                      background: rgba(0,0,0,.1);" class="form-inline" role="form">
                         <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Deshabilitar Producto</h1>
@@ -14,7 +16,7 @@
                         <div class="form-group">
                             <label for="cogigo" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000">Código del producto a deshabilitar:</label>
                             <asp:TextBox type="number" CssClass="form-control" ID="Identification" runat="server" placeholder="Ejemplo:001" title="Digite el número de código del producto" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
-                        <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-default btn-lg, btn btn-primary"  BackColor="#FF6600" Font-Bold="True" Font-Size="Medium" Height="32px" Width="156px"><i class="fa fa-search"></i> Buscar producto</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-default btn-lg, btn btn-primary"  BackColor="#FF6600" Font-Bold="True" Font-Size="Medium" Height="32px" Width="156px" OnClick="LinkButton1_Click"><i class="fa fa-search"></i> Buscar producto</asp:LinkButton>
                         
                         </div>
 
@@ -61,13 +63,13 @@
             <br />
             <br />
                     </div>
+                    </center>
+
+                </div>
 
             </div>
-            
 
         </div>
 
     </div>
-
-</div>
 </asp:Content>

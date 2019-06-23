@@ -5,6 +5,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
@@ -89,7 +90,28 @@ namespace PizzeríaElParque
 
         protected void btbAgregar_Click(object sender, EventArgs e)
         {
-             
+            LogicProduct product = new LogicProduct();
+
+            if (product.ConsultProductEnabled().Count != 0)
+            {
+                for (int i = 0; i <= product.ConsultProductEnabled().Count; i++)
+                {
+                    if (product.ConsultProductEnabled()[i].name == txtName.Text.Trim())
+                    {
+                        //código
+                    }
+                }
+            }
+            else {
+
+                product.InsertProduct(Convert.ToInt32(Identification.Text.Trim()), txtName.Text.Trim(), " ", Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue), 0);
+
+
+            }
+            
+            
+
+
         }
     }
 }
