@@ -52,8 +52,38 @@ namespace PizzeríaElParque
                         sbMensaje.Append("</script>");
                         ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
                     }
+                    
                 }
+                if(Request.QueryString["code"].ToString() != "")
+                {
+
+                    StringBuilder sbMensaje = new StringBuilder();
+                    sbMensaje.Append("<script type='text/javascript'>");
+                    sbMensaje.AppendFormat("toastr.warning('El producto que desea crear se encuentra deshabilitado. Para habilitarlo favor modificar los campos');");
+                    sbMensaje.Append("</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
+
+                    Identification.Text = Request.QueryString["code"];
+
+                    string[] splitProduct;
+
+                    String newProduct = "";
+
+                    newProduct = product.ConsultProductCode(Identification.Text.Trim());
+
+                    splitProduct = newProduct.Split('/');
+
+                    txtName.Text = splitProduct[0];
+
+                    DropDownListPreparationTime.SelectedItem.Text = splitProduct[1];
+
+                    txtPrice.Text = splitProduct[2];
+
+                    LinkButton1.Visible = false;
+                }
+
                 Session["Admin"].ToString();
+               
             }
             catch (Exception ex)
             {

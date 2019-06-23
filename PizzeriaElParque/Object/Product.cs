@@ -18,9 +18,10 @@ namespace Object
         {
         }
 
-        public Product(string name)
+        public Product(string name, int code)
         {
             this.name = name;
+            this.code = code;
         }
 
         public Product(int code, string name, string description, double price, int minInPrepara, char enabled)
@@ -31,6 +32,16 @@ namespace Object
             this.price = price;
             this.MinInPrepara = minInPrepara;
             this.enabled = enabled;
+        }
+
+        public Product(int code, string name, string description, double price, int minInPrepara, int quantity)
+        {
+            this.code = code;
+            this.name = name;
+            this.description = description;
+            this.price = price;
+            MinInPrepara = minInPrepara;
+            this.quantity = quantity;
         }
 
         public Product(int code, string name, string description, double price, int minInPrepara, int quantity, char enabled)

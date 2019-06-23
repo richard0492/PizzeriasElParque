@@ -12,6 +12,7 @@ namespace PizzeríaElParque
     public partial class AddProduct : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicProduct product = new LogicProduct();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -52,7 +53,8 @@ namespace PizzeríaElParque
                     }
                 }
                 Session["Admin"].ToString();
-
+                
+                    
             }
             catch (Exception ex)
             {
@@ -90,28 +92,25 @@ namespace PizzeríaElParque
 
         protected void btbAgregar_Click(object sender, EventArgs e)
         {
-            LogicProduct product = new LogicProduct();
+            
+            product.InsertProduct(Convert.ToInt32(Identification.Text.Trim()), txtName.Text.Trim(), " ", Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue), 0);
+        }
 
-            if (product.ConsultProductEnabled().Count != 0)
+        protected void txtName_TextChanged(object sender, EventArgs e)
+        {
+            if (IsPostBack)
             {
-                for (int i = 0; i <= product.ConsultProductEnabled().Count; i++)
+                if (product.ConsultProductEnabled().Count != 0)
                 {
-                    if (product.ConsultProductEnabled()[i].name == txtName.Text.Trim())
+                    for (int i = 0; i <= product.ConsultProductEnabled().Count; i++)
                     {
-                        //código
+                        if (product.ConsultProductEnabled()[i].name == txtName.Text.Trim())
+                        {
+                            Response.Redirect("ModifyProduct.aspx?code=" + product.ConsultProductEnabled()[i].code);
+                        }
                     }
                 }
             }
-            else {
-
-                product.InsertProduct(Convert.ToInt32(Identification.Text.Trim()), txtName.Text.Trim(), " ", Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue), 0);
-
-
-            }
-            
-            
-
-
         }
     }
 }

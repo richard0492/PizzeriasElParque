@@ -61,6 +61,9 @@ namespace Logic
         public List<Product> ConsulProducts()
         {
             List<Product> products = new List<Product>();
+
+            products = dataProducts.ConsulProducts();
+
             return products;
         }
 
@@ -68,6 +71,14 @@ namespace Logic
         {
             Product product = new Product();
             product = dataProducts.ConsultProduct(Product_Code);
+
+            return product.name + "/" + product.MinInPrepara + "/" + product.price;
+        }
+
+        public string ConsultProductCode(String Product_Code)
+        {
+            Product product = new Product();
+            product = dataProducts.ConsultProducCode(Product_Code);
 
             return product.name + "/" + product.MinInPrepara + "/" + product.price;
         }
@@ -85,11 +96,15 @@ namespace Logic
 
         public bool DeleteProduct(int product_Code, char enabled)
         {
-          
+            try
+            {
                 dataProducts.DeleteProducts(product_Code, enabled);
                 return true;
-           
+            }
+            catch
+            {
                 return false;
+            }
             
         }
 
