@@ -35,7 +35,6 @@ namespace PizzeríaElParque
                 this.nameUser = name.Split('/');
 
             }
-
             try
             {
                 if (Request.Params["men"] != null)
@@ -52,6 +51,7 @@ namespace PizzeríaElParque
                     }
                 }
                 Session["Admin"].ToString();
+
             }
             catch (Exception ex)
             {
