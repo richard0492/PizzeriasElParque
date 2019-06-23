@@ -6,11 +6,15 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using Logic;
+using Object;
+
 namespace PizzeríaElParque
 {
     public partial class DisableUser : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicUser data = new LogicUser();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -85,6 +89,35 @@ namespace PizzeríaElParque
                     }
                 }
             }
+            if (!IsPostBack)
+            {
+
+                if (Request.Params["men"] != null)
+                {
+                    string menssage = Request.Params["men"];
+
+                    if (menssage == "1")
+                    {
+                        StringBuilder sbMensaje = new StringBuilder();
+                        sbMensaje.Append("<script type='text/javascript'>");
+                        sbMensaje.AppendFormat("toastr.warning('Debe iniciar sesión');");
+                        sbMensaje.Append("</script>");
+                        ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
+                    }
+                }
+
+                dlEmployees.DataSource = data.ConsultUsers();
+
+                dlEmployees.DataTextField = "fullName";
+                dlEmployees.DataValueField = "name";
+
+                dlEmployees.DataBind();
+            }
+        }
+
+        protected void btbDisable_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
