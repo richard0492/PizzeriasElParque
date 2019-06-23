@@ -13,6 +13,7 @@ namespace PizzeríaElParque {
     public partial class DisableProduct {
         
         /// <summary>
+
         /// Control txtName.
         /// </summary>
         /// <remarks>
@@ -22,30 +23,33 @@ namespace PizzeríaElParque {
         protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
-        /// Control Identification.
+
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Identification;
+
+        protected global::System.Web.UI.WebControls.DropDownList DropDownListPreparationTime;
         
         /// <summary>
-        /// Control DropDownList1.
+        /// Control txtPrice.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+
+        protected global::System.Web.UI.WebControls.TextBox txtPrice;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control btnDisable.
+
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.LinkButton btnDisable;
     }
 }

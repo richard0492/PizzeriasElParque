@@ -3,120 +3,74 @@
 
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="panel panel-default">
-                <div class="panel-body">
-
-                    <form role="form">
-                        <div class="form-group">
-                            <label>Text Input</label>
-                            <input class="form-control" />
-                            <p class="help-block">Help text here.</p>
-                        </div>
-                        <div class="form-group">
-                            <label>Text Input with Placeholder</label>
-                            <input class="form-control" placeholder="PLease Enter Keyword" />
-                        </div>
-                        <div class="form-group">
-                            <label>Just A Label Control</label>
-                            <p class="form-control-static">info@yourdomain.com</p>
-                        </div>
-                        <div class="form-group">
-                            <label>File input</label>
-                            <input type="file" />
-                        </div>
-                        <div class="form-group">
-                            <label>Text area</label>
-                            <textarea class="form-control" rows="3"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <label>Checkboxes</label>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="" />Checkbox Example One
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="" />Checkbox Example Two
-                                </label>
-                            </div>
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox" value="" />Checkbox Example Three
-                                </label>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Inline Checkboxes Examples</label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" />
-                                One
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" />
-                                Two
-                            </label>
-                            <label class="checkbox-inline">
-                                <input type="checkbox" />
-                                Three
-                            </label>
-                        </div>
-                        <div class="form-group">
-                            <label>Radio Button Examples</label>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />Radio Example One
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />Radio Example Two
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" />Radio Example Three
-                                </label>
-                            </div>
-                        </div>
+     <div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <center>
+                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box;
+                     background: rgba(0,0,0,.1);" class="form-inline" role="form">
+                        <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Ingrese datos del Usuario</h1>
+                        <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade" />
 
                         <div class="form-group">
-                            <label>Select Example</label>
-                            <select class="form-control">
-                                <option>One Vale</option>
-                                <option>Two Vale</option>
-                                <option>Three Vale</option>
-                                <option>Four Vale</option>
-                            </select>
+                            <label for="name" style="font-size: medium; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #000000;">Primer nombre:</label>
+                            <asp:TextBox type="text" CssClass="form-control" ID="txtName" runat="server" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
+                            <label for="secondName" style="font-size: medium; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #000000;">Segundo nombre:</label>
+                            <asp:TextBox type="text" CssClass="form-control" ID="txtSecondName" runat="server" aria-placeholder="opcional" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
                         </div>
+
+                        <br />
+
+                        <br/>
+
                         <div class="form-group">
-                            <label>Multiple Select Example</label>
-                            <select multiple class="form-control">
-                                <option>One Vale</option>
-                                <option>Two Vale</option>
-                                <option>Three Vale</option>
-                                <option>Four Vale</option>
-                            </select>
+                            <label for="lastName" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000">Primer apellido:</label>
+                            <asp:TextBox type="text" CssClass="form-control" ID="txtLastName" runat="server" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
+                            <label for="SecondLastName" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000">Segundo apellido:</label>
+                            <asp:TextBox type="text" CssClass="form-control" ID="txtSecondLastName" runat="server" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
                         </div>
-                        <button type="submit" class="btn btn-default">Submit Button</button>
-                        <button type="reset" class="btn btn-primary">Reset Button</button>
 
-                    </form>
-                    <br />
+                        <br>
+                        <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade">
+                        <br>
+                        <br>
 
+                        <div class="form-group">
+                            <label for="cedula" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000">Número de Cédula:</label>
+                            <asp:TextBox type="number" CssClass="form-control" ID="Identification" runat="server" placeholder="Ejemplo:101110011" title="Digite el número de cédula con números seguidos y con división de ceros ejemplo:101110111" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
+                        </div>
 
+                        <hr style=" color: #0000FF; line-height: 10px; height: 2px; width: 80%;" noshade="noshade">
+                        <br>
+                        <br>
 
-
-
-                </div>
-
+                        <div class="form-group">
+                            <label for="Type" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000">Tipo de usuario:</label>
+                            <asp:DropDownList ID="DropDownList1" CssClass="form-control" runat="server" Font-Bold="True" readonly Font-Names="Lucida Sans">
+                                <asp:ListItem>Administrador</asp:ListItem>
+                                <asp:ListItem>Cajero</asp:ListItem>
+                                <asp:ListItem>Cocina</asp:ListItem>
+                            </asp:DropDownList>
+                            <br>
+                            <br>
+                        </div>
+                        <br />
+            <br />
+            <asp:LinkButton ID="btnAgregar" runat="server" class="btn btn-default btn-lg, btn btn-primary" OnClick="btbAgregar_Click" BackColor="Blue" Font-Bold="True" Font-Size="Medium" Height="49px" Width="117px"><i class="fa fa-plus"></i> Agregar</asp:LinkButton>
+            <br />
+            <br />
+            <br />
+                    </div>
+                </center>
 
             </div>
-
+            
 
         </div>
+
     </div>
+
+</div>
 
 </asp:Content>

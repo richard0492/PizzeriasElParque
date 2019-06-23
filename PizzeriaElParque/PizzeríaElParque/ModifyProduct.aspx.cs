@@ -86,5 +86,15 @@ namespace PizzeríaElParque
                 }
             }
         }
+
+        protected void btbAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void btnModify_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
