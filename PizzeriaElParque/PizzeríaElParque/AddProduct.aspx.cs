@@ -102,9 +102,9 @@ namespace PizzeríaElParque
             {
                 if (product.ConsultProductEnabled().Count != 0)
                 {
-                    for (int i = 0; i <= product.ConsultProductEnabled().Count; i++)
+                    for (int i = 0; i < product.ConsultProductEnabled().Count; i++)
                     {
-                        if (product.ConsultProductEnabled()[i].name == txtName.Text.Trim())
+                        if (product.ConsultProductEnabled()[i].name.Equals(txtName.Text.Trim()))
                         {
                             Response.Redirect("ModifyProduct.aspx?code=" + product.ConsultProductEnabled()[i].code);
                         }
