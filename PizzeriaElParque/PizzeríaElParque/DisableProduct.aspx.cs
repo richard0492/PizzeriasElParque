@@ -5,12 +5,15 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class DisableProduct : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicProduct product = new LogicProduct();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -88,7 +91,26 @@ namespace PizzeríaElParque
 
         protected void btnDisable_Click(object sender, EventArgs e)
         {
+            product.DeleteProduct(Convert.ToInt32(Identification.Text.Trim()), 'n');
+        }
 
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            string[] splitProduct;
+
+
+
+            String newProduct = "";
+
+            newProduct = product.ConsultProduct(Identification.Text.Trim());
+
+            splitProduct = newProduct.Split('/');
+
+            txtName.Text = splitProduct[0];
+
+            DropDownListPreparationTime.SelectedItem.Text = splitProduct[1];
+
+            txtPrice.Text = splitProduct[2];
         }
     }
 }

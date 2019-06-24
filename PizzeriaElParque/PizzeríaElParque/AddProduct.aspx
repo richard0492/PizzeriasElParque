@@ -13,7 +13,7 @@
 
                         <div class="form-group">
                             <label for="name" style="font-size: medium; font-family: Verdana, Geneva, Tahoma, sans-serif; color: #000000;">Nombre del producto:</label>
-                            <asp:TextBox type="text" CssClass="form-control" ID="txtName" runat="server" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
+                            <asp:TextBox type="text" CssClass="form-control" ID="txtName" runat="server" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans" AutoPostBack="True" OnTextChanged="txtName_TextChanged"></asp:TextBox>
                             &nbsp;</div>
                         <br /><br />
                         <div class="form-group">

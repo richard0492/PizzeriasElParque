@@ -5,12 +5,14 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class AddProduct : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicProduct product = new LogicProduct();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -35,7 +37,6 @@ namespace PizzeríaElParque
                 this.nameUser = name.Split('/');
 
             }
-
             try
             {
                 if (Request.Params["men"] != null)
@@ -52,6 +53,8 @@ namespace PizzeríaElParque
                     }
                 }
                 Session["Admin"].ToString();
+                
+                    
             }
             catch (Exception ex)
             {
@@ -89,7 +92,25 @@ namespace PizzeríaElParque
 
         protected void btbAgregar_Click(object sender, EventArgs e)
         {
-             
+            
+            product.InsertProduct(Convert.ToInt32(Identification.Text.Trim()), txtName.Text.Trim(), " ", Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue), 0);
+        }
+
+        protected void txtName_TextChanged(object sender, EventArgs e)
+        {
+            if (IsPostBack)
+            {
+                if (product.ConsultProductEnabled().Count != 0)
+                {
+                    for (int i = 0; i < product.ConsultProductEnabled().Count; i++)
+                    {
+                        if (product.ConsultProductEnabled()[i].name.Equals(txtName.Text.Trim()))
+                        {
+                            Response.Redirect("ModifyProduct.aspx?code=" + product.ConsultProductEnabled()[i].code);
+                        }
+                    }
+                }
+            }
         }
     }
 }
