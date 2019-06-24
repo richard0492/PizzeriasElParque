@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+PizzeriaElParque/.vs/PizzeriaELParque/v15/Server/sqlite3/storage.ide-wal
+PizzeriaElParque/.vs/PizzeriaELParque/v15/Server/sqlite3/storage.ide-shm
+PizzeriaElParque/.vs/PizzeriaELParque/v15/Server/sqlite3/storage.ide-shm
