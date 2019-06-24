@@ -18,14 +18,30 @@ namespace Object
         {
         }
 
+        public Product(string name, int code)
+        {
+            this.name = name;
+            this.code = code;
+        }
+
         public Product(int code, string name, string description, double price, int minInPrepara, char enabled)
         {
             this.code = code;
             this.name = name;
             this.description = description;
             this.price = price;
-            MinInPrepara = minInPrepara;
+            this.MinInPrepara = minInPrepara;
             this.enabled = enabled;
+        }
+
+        public Product(int code, string name, string description, double price, int minInPrepara, int quantity)
+        {
+            this.code = code;
+            this.name = name;
+            this.description = description;
+            this.price = price;
+            MinInPrepara = minInPrepara;
+            this.quantity = quantity;
         }
 
         public Product(int code, string name, string description, double price, int minInPrepara, int quantity, char enabled)
@@ -34,7 +50,18 @@ namespace Object
             this.name = name;
             this.description = description;
             this.price = price;
-            MinInPrepara = minInPrepara;
+            this.MinInPrepara = minInPrepara;
+            this.quantity = quantity;
+            this.enabled = enabled;
+        }
+
+        public Product(string name, string description, double price, int minInPrepara, int quantity, char enabled, int code)
+        {
+            this.code = code;
+            this.name = name;
+            this.description = description;
+            this.price = price;
+            this.MinInPrepara = minInPrepara;
             this.quantity = quantity;
             this.enabled = enabled;
         }

@@ -5,12 +5,14 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class ModifyProduct : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicProduct product = new LogicProduct();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -50,8 +52,38 @@ namespace PizzeríaElParque
                         sbMensaje.Append("</script>");
                         ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
                     }
+                    
                 }
+                if(Request.QueryString["code"].ToString() != "")
+                {
+
+                    StringBuilder sbMensaje = new StringBuilder();
+                    sbMensaje.Append("<script type='text/javascript'>");
+                    sbMensaje.AppendFormat("toastr.warning('El producto que desea crear se encuentra deshabilitado. Para habilitarlo favor modificar los campos');");
+                    sbMensaje.Append("</script>");
+                    ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
+
+                    Identification.Text = Request.QueryString["code"];
+
+                    string[] splitProduct;
+
+                    String newProduct = "";
+
+                    newProduct = product.ConsultProductCode(Identification.Text.Trim());
+
+                    splitProduct = newProduct.Split('/');
+
+                    txtName.Text = splitProduct[0];
+
+                    DropDownListPreparationTime.SelectedItem.Text = splitProduct[1];
+
+                    txtPrice.Text = splitProduct[2];
+
+                    LinkButton1.Visible = false;
+                }
+
                 Session["Admin"].ToString();
+               
             }
             catch (Exception ex)
             {
@@ -87,13 +119,29 @@ namespace PizzeríaElParque
             }
         }
 
-        protected void btbAgregar_Click(object sender, EventArgs e)
+        protected void btnModify_Click(object sender, EventArgs e)
         {
+            product.ModifyProduct(Convert.ToInt32(Identification.Text.Trim()),txtName.Text.Trim(),"",Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue),0);
 
         }
 
-        protected void btnModify_Click(object sender, EventArgs e)
+        protected void LinkButton1_Click(object sender, EventArgs e)
         {
+            string[] splitProduct;
+
+            
+
+            String newProduct = "";
+
+            newProduct = product.ConsultProduct(Identification.Text.Trim());
+
+            splitProduct = newProduct.Split('/');
+
+            txtName.Text = splitProduct[0];
+
+            DropDownListPreparationTime.SelectedItem.Text = splitProduct[1];
+
+            txtPrice.Text = splitProduct[2];
 
         }
     }

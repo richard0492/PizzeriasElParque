@@ -56,7 +56,12 @@ namespace PizzeríaElParque
                         sbMensaje.Append("</script>");
                         ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
                     }
-                   
+                    dlEmployees.DataSource = data.ConsultUsers();
+
+                    dlEmployees.DataTextField = "fullName";
+                    dlEmployees.DataValueField = "fullName";
+
+                    dlEmployees.DataBind();
                 }
                 else
                 {
