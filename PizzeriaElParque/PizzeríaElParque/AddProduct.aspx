@@ -3,11 +3,10 @@
 
   <div class="row">
     <div class="col-md-12">
-        <div class="panel panel-default">
+        <div class="panel panel-default" style="border-radius: 20px 20px 20px 20px;">
             <div class="panel-body">
                 <center>
-                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box;
-                     background: rgba(0,0,0,.1);" class="form-inline" role="form">
+                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box; border-radius: 20px 20px 20px 20px;" class="form-inline" role="form">
                         <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Ingrese datos del Producto</h1>
                         <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade" />
 
@@ -53,7 +52,7 @@
                         </div>
                         <br />
             <br />
-            <asp:LinkButton ID="btnAgregar" runat="server" class="btn btn-default btn-lg, btn btn-primary" OnClick="btbAgregar_Click" BackColor="Blue" Font-Bold="True" Font-Size="Medium" Height="49px" Width="117px"><i class="fa fa-plus"></i> Agregar</asp:LinkButton>
+            <asp:LinkButton ID="btnAgregar" runat="server" class="btn btn-default btn-lg, btn btn-primary" OnClick="btbAgregar_Click" Height="49px" Width="117px"><i class="fa fa-plus"></i> Agregar</asp:LinkButton>
             <br />
             <br />
             <br />

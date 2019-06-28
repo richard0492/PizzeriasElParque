@@ -11,7 +11,6 @@ namespace PizzeríaElParque {
     
     
     public partial class AddProduct {
-
         
         /// <summary>
         /// Control txtName.

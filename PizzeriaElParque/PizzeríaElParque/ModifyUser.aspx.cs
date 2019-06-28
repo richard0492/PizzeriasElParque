@@ -13,6 +13,8 @@ namespace PizzeríaElParque
     public partial class ModifyUser : System.Web.UI.Page
     {
         string[] nameUser;
+        string[] nameUserModify;
+
         LogicUser data = new LogicUser();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -90,33 +92,79 @@ namespace PizzeríaElParque
 
             if (!IsPostBack)
             {
-
-                if (Request.Params["men"] != null)
-                {
-                    string menssage = Request.Params["men"];
-
-                    if (menssage == "1")
-                    {
-                        StringBuilder sbMensaje = new StringBuilder();
-                        sbMensaje.Append("<script type='text/javascript'>");
-                        sbMensaje.AppendFormat("toastr.warning('Debe iniciar sesión');");
-                        sbMensaje.Append("</script>");
-                        ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
-                    }
-                }
-
+            
                 dlEmployees.DataSource = data.ConsultUsers();
 
                 dlEmployees.DataTextField = "fullName";
-                dlEmployees.DataValueField = "name";
+                dlEmployees.DataValueField = "fullName";
 
                 dlEmployees.DataBind();
+
+                string nameM = dlEmployees.SelectedItem.ToString();
+
+                string[] nameUserM = nameM.Split('/');
+
+                nameUserM[0].ToString();
+
+                string modify = data.ConsultUserModify(nameUserM[0]);
+
+                nameUserModify = modify.Split('/');
+
+                tbIDCard.Text = nameUserModify[0];
+                txtName.Text = nameUserModify[1];
+                txtSecondName.Text = nameUserModify[2];
+                txtLastName.Text = nameUserModify[3];
+                txtSecondLastName.Text = nameUserModify[4];
+                DropDownList1.SelectedItem.Text = nameUserModify[5];
+
             }
         }
 
         protected void btbModify_Click(object sender, EventArgs e)
         {
+            
+            data.ModifyUser(Convert.ToInt32(tbIDCard.Text.Trim()),txtName.Text.Trim(),'s',numberType(DropDownList1.SelectedItem.Text),txtSecondName.Text.Trim(),txtLastName.Text.Trim(),txtSecondLastName.Text.Trim());
+        }
 
+        protected int numberType(string type) {
+
+            int numberType = 0;
+
+            if (type.Equals("Administrador")) {
+                return 1;
+            }
+
+            if (type.Equals("Cajero"))
+            {
+                return 2;
+            }
+
+            if (type.Equals("Cocinero"))
+            {
+                return 3;
+            }
+
+            return numberType;
+        }
+
+        protected void dlEmployees_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string nameM = dlEmployees.SelectedItem.ToString();
+
+            string[] nameUserM = nameM.Split('/');
+
+            nameUserM[0].ToString();
+
+            string modify = data.ConsultUserModify(nameUserM[0]);
+
+            nameUserModify = modify.Split('/');
+
+            tbIDCard.Text = nameUserModify[0];
+            txtName.Text = nameUserModify[1];
+            txtSecondName.Text = nameUserModify[2];
+            txtLastName.Text = nameUserModify[3];
+            txtSecondLastName.Text = nameUserModify[4];
+            DropDownList1.SelectedItem.Text = nameUserModify[5];
         }
     }
 }
