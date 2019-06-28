@@ -33,33 +33,79 @@ namespace Logic
             //  }
         }
 
-        public bool ModifyProduct(Product product, String product_Code)
+        public bool ModifyProduct(int code, string name, string description, double price, int minInpreparation, int quantity)
         {
-            return false;
+            try
+            {
+                Product product = new Product();
+
+                
+                product.name = name;
+                product.description = description;
+                product.price = price;
+                product.MinInPrepara = minInpreparation;
+                product.quantity = quantity;
+                product.enabled = 's';
+                product.code = code;
+
+                dataProducts.modifyProduct(product);
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
 
         public List<Product> ConsulProducts()
         {
             List<Product> products = new List<Product>();
+
+            products = dataProducts.ConsulProducts();
+
             return products;
         }
 
-        public String ConsultProduct(String Product_Code)
+        public string ConsultProduct(String Product_Code)
         {
-            String ProductData = dataProducts.ConsultProduct(Product_Code);
-            return ProductData;
+            Product product = new Product();
+            product = dataProducts.ConsultProduct(Product_Code);
+
+            return product.name + "/" + product.MinInPrepara + "/" + product.price;
         }
 
-        public void DeleteProducts(int number)
-
+        public string ConsultProductCode(String Product_Code)
         {
-            dataProducts.DeleteProducts(number);
+            Product product = new Product();
+            product = dataProducts.ConsultProducCode(Product_Code);
 
+            return product.name + "/" + product.MinInPrepara + "/" + product.price;
         }
 
-        public bool DeleteProduct(String product_Code)
+        public List<Product> ConsultProductEnabled()
         {
-            return false;
+            List<Product> products = new List<Product>();
+            DataProducts product = new DataProducts();
+
+            products = product.ConsulProductsEnabled();
+
+            return products;
+        }
+
+
+        public bool DeleteProduct(int product_Code, char enabled)
+        {
+            try
+            {
+                dataProducts.DeleteProducts(product_Code, enabled);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            
         }
 
 

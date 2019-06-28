@@ -5,12 +5,15 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class ListProduct : System.Web.UI.Page
     {
         string[] nameUser;
+
+        LogicProduct product = new LogicProduct();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -52,6 +55,11 @@ namespace PizzeríaElParque
                     }
                 }
                 Session["Admin"].ToString();
+                
+
+                GridView1.DataSource = product.ConsulProducts();
+                GridView1.DataBind();
+
             }
             catch (Exception ex)
             {
