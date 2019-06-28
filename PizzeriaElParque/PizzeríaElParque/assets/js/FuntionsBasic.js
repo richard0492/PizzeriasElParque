@@ -1,5 +1,5 @@
-﻿function hide() {
-    document.getElementById('insertar').style.display = 'none';
+﻿function hide(id) {
+    document.getElementById(id).style.display = 'none';
 
 }
 function show(id) {
@@ -12,31 +12,24 @@ function showModal() {
     });
 }
 
-function validatePasswors() {
-
-    var password1 = document.getElementById("newPassword").value;
-    var password2 = document.getElementById("validatePassword").value;
-
-    if (password1 == "" || password2 == "") {
-        toastr.warning("Existen campos sin llenar");
-    } else {
-        if (password1 == password2) {
-
-            darClick();
-
-            toastr.success("Creaste tu contraseña");
-        } else {
-            toastr.error("Las contraseñas no son iguales");
-        }
-    }
-
+function showModalOrder() {
+    $(document).ready(function () {
+        $("#MyModal2").modal({ backdrop: 'static', keyboard: false });
+    });
 }
-function darClick() {
+function agregarFila() {
+    document.getElementById("tablaprueba").insertRow(-1).innerHTML = '<td></td><td></td><td></td><td></td>';
+}
 
-    var boton = document.getElementById('<%=newPasswordUser.ClientID%>');
+function eliminarFila() {
+    var table = document.getElementById("tablaprueba");
+    var rowCount = table.rows.length;
+    //console.log(rowCount);
 
-    boton.click(); 
-
+    if (rowCount <= 1)
+        alert('No se puede eliminar el encabezado');
+    else
+        table.deleteRow(rowCount - 1);
 }
 
 
