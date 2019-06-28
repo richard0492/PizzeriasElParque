@@ -22,14 +22,5 @@ namespace PizzeríaElParque.Properties {
                 return defaultInstance;
             }
         }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.WebServiceUrl)]
-        public string Valor {
-            get {
-                return ((string)(this["Valor"]));
-            }
-        }
     }
 }

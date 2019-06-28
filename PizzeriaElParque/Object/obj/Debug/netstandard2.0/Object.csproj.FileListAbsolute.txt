@@ -23,3 +23,12 @@ C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.deps.json
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csprojAssemblyReference.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csproj.CoreCompileInputs.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfoInputs.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb

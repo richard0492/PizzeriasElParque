@@ -7,7 +7,7 @@ namespace Data
 {
     public class DBConection
     {
-        string connectionString = "server=localhost;user id=root; password=root;persistsecurityinfo=True;database=pizzeriaelparque";
+        string connectionString = "server=localhost;user id=root; password=ucr.info;persistsecurityinfo=True;database=pizzeriaelparque";
 
         public MySqlConnection Connection() {
             return new MySqlConnection(connectionString);
