@@ -5,12 +5,14 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class AgregarAdmin : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicUser user = new LogicUser();
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -87,14 +89,9 @@ namespace PizzeríaElParque
             }
         }
 
-        protected void ButtonADDPlate_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void btbAgregar_Click(object sender, EventArgs e)
         {
-
+            user.InsertUser(Convert.ToInt32(Identification.Text.Trim()),"",txtName.Text.Trim(),Convert.ToInt32(DropDownList1.SelectedValue),txtSecondName.Text.Trim(),txtLastName.Text.Trim(),txtSecondLastName.Text.Trim());
         }
     }
 }

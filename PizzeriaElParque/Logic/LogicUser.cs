@@ -11,8 +11,7 @@ namespace Logic
 
         DataUser dataUser = new DataUser();
 
-        public void InsertUser(int IDnumber, String password, String name, int userType, string secondName
-               , string lastName1, string lastName2)
+        public void InsertUser(int IDnumber, String password, String name, int userType, string secondName, string lastName1, string lastName2)
         {
 
             User user = new User();
@@ -44,15 +43,14 @@ namespace Logic
         }
 
 
-        public bool ModifyUser(User user, string user_ID)
+        public bool ModifyUser(int dnumber, string name, char enabled, int userType, string secondName, string lastName1, string lastName2)
         {
-            ConsultUser(user_ID);
+            dataUser.modifyUser(new User(dnumber, name, enabled, userType, secondName, lastName1, lastName2));
             return false;
         }
 
         public List<User> ConsultUsers()
         {
-
             List<User> users = new List<User>();
 
             DataUser listUser = new DataUser();
@@ -68,9 +66,27 @@ namespace Logic
             return fullNombre;
         }
 
-        public void DeleteUser(int ID)
+        public List<User> ConsultUsersList()
         {
-            dataUser.DeleteUser(ID);
+            List<User> users = new List<User>();
+
+            DataUser listUser = new DataUser();
+
+            users = listUser.ConsultUsersList();
+
+            return users;
+        }
+
+
+        public String ConsultUserModify(String IDUser)
+        {
+            String fullNombre = dataUser.ConsultUsersModify(IDUser);
+            return fullNombre;
+        }
+
+        public void DeleteUser(int ID, char enabled)
+        {
+            dataUser.DeleteUser(ID, enabled);
         }
 
         public bool loginUser(int User_ID, String User_Name)

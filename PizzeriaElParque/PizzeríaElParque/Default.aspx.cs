@@ -156,6 +156,7 @@ namespace PizzeríaElParque
                 sbMensaje.AppendFormat("toastr.error('Existen campos en blanco');");
                 sbMensaje.Append("</script>");
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
+
                 ClientScript.RegisterStartupScript(this.GetType(), "key", "showModal()", true);
 
 

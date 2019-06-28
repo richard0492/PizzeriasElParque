@@ -3,12 +3,11 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="row">
         <div class="col-md-12">
-            <div class="panel panel-default">
+           <div class="panel panel-default" style="border-radius: 20px 20px 20px 20px;">
                 <div class="panel-body">
                     <center>
-                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box;
-                     background: rgba(0,0,0,.1);" class="form-inline" role="form">
-                        <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Lista de Productos Activos</h1>
+                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box; border-radius: 20px 20px 20px 20px;" class="form-inline" role="form">
+                       <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Lista de Productos Activos</h1>
                        
                         <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade" />
 

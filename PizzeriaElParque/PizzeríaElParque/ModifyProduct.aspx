@@ -3,19 +3,18 @@
 
     <div class="row">
     <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-body">
-                <center>
-                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box;
-                     background: rgba(0,0,0,.1);" class="form-inline" role="form">
-                        <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Moficar Producto</h1>
+        <div class="panel panel-default" style="border-radius: 20px 20px 20px 20px;">
+                <div class="panel-body">
+                    <center>
+                    <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box; border-radius: 20px 20px 20px 20px;" class="form-inline" role="form">
+                       <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Moficar Producto</h1>
                         <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade" />
 
                         <br /><br />
                         <div class="form-group">
                             <label for="cogigo" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000">Código del producto a modificar:</label>
                             <asp:TextBox type="number" CssClass="form-control" ID="Identification" runat="server" placeholder="Ejemplo:001" title="Digite el número de código del producto" BorderColor="Blue" Font-Bold="True" Font-Names="Lucida Sans"></asp:TextBox>
-                        <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-default btn-lg, btn btn-primary"  BackColor="#FF6600" Font-Bold="True" Font-Size="Medium" Height="32px" Width="156px" OnClick="LinkButton1_Click"><i class="fa fa-search"></i> Buscar producto</asp:LinkButton>
+                        <asp:LinkButton ID="LinkButton1" runat="server" class="btn btn-default btn-lg, btn btn-primary" Height="32px" Width="156px" OnClick="LinkButton1_Click"><i class="fa fa-search"></i> Buscar producto</asp:LinkButton>
                         
                         </div>
 
@@ -34,6 +33,7 @@
                            
                             <br />
                             <asp:DropDownList CssClass="form-control" ID="DropDownListPreparationTime" runat="server" Font-Bold="True" Font-Names="Lucida Sans" >
+                                <asp:ListItem>Selccione un tiempo</asp:ListItem>
                                 <asp:ListItem Value="0 ">0 minutos</asp:ListItem>
                                 <asp:ListItem Value="5  ">5  minutos</asp:ListItem>
                                 <asp:ListItem Value="10  ">10  minutos</asp:ListItem>
@@ -56,7 +56,7 @@
                         </div>
                         <br />
             <br />
-            <asp:LinkButton ID="btnModify" runat="server" class="btn btn-default btn-lg, btn btn-primary"  BackColor="Blue" Font-Bold="True" Font-Size="Medium" Height="49px" Width="117px" OnClick="btnModify_Click"><i class="fa fa-plus"></i> Modificar</asp:LinkButton>
+            <asp:LinkButton ID="btnModify" runat="server" class="btn btn-default btn-lg, btn btn-primary" Height="49px" Width="117px" OnClick="btnModify_Click"><i class="fa fa-plus"></i> Modificar</asp:LinkButton>
             <br />
             <br />
             <br />
