@@ -5,11 +5,15 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class BetweenDates : System.Web.UI.Page
     {
+        LogicUser data = new LogicUser();
+       LogicReport logicReport = new LogicReport();
+
         string[] nameUser;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -85,6 +89,15 @@ namespace PizzeríaElParque
                     }
                 }
             }
+
+            }
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            DateTime date1 = new DateTime(2019, 06, 10);
+            DateTime date2 = new DateTime(2019, 06, 30);
+            LabelPrueba.Text = logicReport.ConsulReports_Product(date1, date2, 1234).NameR.ToString();
+        }
+          
+            
         }
     }
-}

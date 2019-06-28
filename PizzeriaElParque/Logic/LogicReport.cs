@@ -8,25 +8,19 @@ namespace Logic
 {
     public class LogicReport
     {
-      
 
-        public List<Report> ConsulReports_Daily(DateTime startDate, DateTime endDate)
+        DataReport DataReport = new DataReport();
+
+        public Report ConsulReports_Product(DateTime startDate, DateTime endDate, int codeProduct)
         {
-            List<Report> reports = new List<Report>();
-            return reports;
+
+            Report report = new Report();
+            report = DataReport.ConsulReports_Product(startDate, endDate, codeProduct);
+            return report;
+
+
         }
 
-        public List<Report> ConsulReports_Monthly(DateTime startDate, DateTime endDate)
-        {
-            List<Report> reports = new List<Report>();
-            return reports;
-        }
 
-        public List<Report> ConsulReports_Yearly(DateTime startDate, DateTime endDate)
-        {
-            List<Report> reports = new List<Report>();
-            return reports;
-        }
-    
     }
 }

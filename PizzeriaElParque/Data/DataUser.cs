@@ -10,7 +10,7 @@ namespace Data
     public class DataUser
     {
 
-        string connectionString = "server=localhost;user id=root; password=root;persistsecurityinfo=True;database=pizzeriaelparque";
+        string connectionString = "server=localhost;user id=root; password=ucr.info;persistsecurityinfo=True;database=pizzeriaelparque";
 
 
         public List<User> ConsultUsers()
@@ -57,7 +57,7 @@ namespace Data
 
             string query = "CALL ConsultarTipo(@p0)";
 
-            using (MySqlCommand cmd = new MySqlCommand(query, connection))
+        using (MySqlCommand cmd = new MySqlCommand(query, connection))
             {
                 cmd.Parameters.AddWithValue("@p0", IDCard);
 
