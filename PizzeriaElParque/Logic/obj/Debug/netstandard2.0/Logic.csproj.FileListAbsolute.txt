@@ -54,3 +54,17 @@ C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Logic
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.dll
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Logic.deps.json
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Logic.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Logic.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Data.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Object.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csprojAssemblyReference.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfo.cs
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.pdb

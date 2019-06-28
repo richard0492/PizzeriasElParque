@@ -32,3 +32,12 @@ C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Objec
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.deps.json
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csprojAssemblyReference.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb

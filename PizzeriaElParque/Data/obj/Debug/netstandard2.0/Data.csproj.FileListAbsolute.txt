@@ -46,3 +46,15 @@ C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Data\
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.dll
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.deps.json
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.dll
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.pdb

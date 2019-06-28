@@ -679,7 +679,6 @@ C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\Pizzer
 C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\System.Web.WebPages.Razor.xml
 C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\Data.pdb
 C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\MySql.Data.xml
-C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.Properties.Resources.resources
 C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.csproj.GenerateResource.cache
 C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.csproj.CoreCompileInputs.cache
@@ -1073,3 +1072,4 @@ C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\Pizze
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.csproj.CopyComplete
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.dll
 C:\Users\a\Documents\RespaldoIngenieria\PizzeriaElParque8\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.pdb
+C:\Users\admin\Documents\UCR TODOS\UCR I 2019\Ingeniería de Software\rep\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\obj\Debug\PizzeríaElParque.csprojAssemblyReference.cache

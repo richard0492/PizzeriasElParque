@@ -1730,23 +1730,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\a\\.nuget\\packages\\": {},
+    "C:\\Users\\admin\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
+      "projectUniqueName": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
       "projectName": "Logic",
-      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
-      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Logic\\obj\\",
+      "projectPath": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Logic\\Logic.csproj",
+      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Logic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1759,11 +1759,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj": {
-              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj"
+            "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Data\\Data.csproj"
             },
-            "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj": {
-              "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj"
+            "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj": {
+              "projectPath": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj"
             }
           }
         }
