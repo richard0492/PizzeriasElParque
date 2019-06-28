@@ -22,6 +22,7 @@ namespace PizzeríaElParque.Properties {
                 return defaultInstance;
             }
         }
+
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -31,5 +32,4 @@ namespace PizzeríaElParque.Properties {
                 return ((string)(this["Valor"]));
             }
         }
-    }
-}
+

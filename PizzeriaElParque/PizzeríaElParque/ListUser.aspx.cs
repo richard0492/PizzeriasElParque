@@ -1,16 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Logic;
 
 namespace PizzeríaElParque
 {
     public partial class ListUser : System.Web.UI.Page
     {
         string[] nameUser;
+        LogicUser user = new LogicUser();
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -51,6 +55,31 @@ namespace PizzeríaElParque
                     }
                 }
                 Session["Admin"].ToString();
+                DataTable dt = new DataTable();
+                dt.Columns.Add("Cédula");
+                dt.Columns.Add("Nombre");
+                dt.Columns.Add("Segundo Nombre");
+                dt.Columns.Add("Primer Apellido");
+                dt.Columns.Add("Segundo Apellido");
+                dt.Columns.Add("Tipo de Usuario");
+
+
+                for (int i = 0; i < user.ConsultUsersList().Count; i++)
+                {
+                    DataRow dr = dt.NewRow();
+                    dr["Cédula"] = user.ConsultUsersList()[i].IDnumber;
+                    dr["Nombre"] = user.ConsultUsersList()[i].name;
+                    dr["Segundo Nombre"] = user.ConsultUsersList()[i].secondName;
+                    dr["Primer Apellido"] = user.ConsultUsersList()[i].lastName1;
+                    dr["Segundo Apellido"] = user.ConsultUsersList()[i].lastName2;
+                    dr["Tipo de Usuario"] = user.ConsultUsersList()[i].nameType;
+                    dt.Rows.Add(dr);
+                }
+
+                GridView1.DataSource = dt;
+                GridView1.DataBind();
+
+                
             }
             catch (Exception ex)
             {
