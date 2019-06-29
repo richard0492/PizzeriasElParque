@@ -116,47 +116,7 @@ namespace PizzeríaElParque
             GridView1.DataBind();
 
         }
-
-        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
-        {
-
-            
-            posicion = int.Parse(e.CommandArgument.ToString());
-
-            tbCodeModify.Text = GridView1.Rows[posicion].Cells[1].Text;
-            tbquantityModify.Text = GridView1.Rows[posicion].Cells[3].Text;
-            tbNameProduct.Text = GridView1.Rows[posicion].Cells[2].Text;
-
-            ClientScript.RegisterStartupScript(this.GetType(), "key", "showModalOrder()", true);
-
-            StringBuilder sbMensaje = new StringBuilder();
-            sbMensaje.Append("<script type='text/javascript'>");
-            sbMensaje.AppendFormat("toastr.error('Número fila grid"+ posicion + "  Número de tabla MySQL" + idLineOrder[posicion] +"');");
-            sbMensaje.Append("</script>");
-            ClientScript.RegisterClientScriptBlock(this.GetType(), "mensaje", sbMensaje.ToString());
-
-        }
-
-        protected void btnAgregar_Click(object sender, EventArgs e)
-        {
-            ClientScript.RegisterStartupScript(this.GetType(), "key", "showModal()", true);
-
-        }
-
-        protected void bntCreate_Click(object sender, EventArgs e)
-        {
-            order.insertLineOders(int.Parse(tbquantity.Text.Trim()), DateTime.Now.Date, DateTime.Now, orderList, int.Parse(tbCode.Text.Trim()));
-        }
-
-        protected void btnModify_Click(object sender, EventArgs e)
-        {
-            order.modifytLineOders(int.Parse(tbquantityModify.Text.Trim()), DateTime.Now.Date, DateTime.Now, orderList, int.Parse(tbCodeModify.Text.Trim()),idLineOrder[posicion]);
-
-        }
-
-        protected void btnDelete_Click(object sender, EventArgs e)
-        {
-
-        }
+        
+      
     }
 }
