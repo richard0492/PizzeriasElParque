@@ -10,7 +10,7 @@ namespace Data
 {
     public class DataReport
     {
-        string connectionString = "server=localhost;user id=root; password=root;persistsecurityinfo=True;database=pizzeriaelparque";
+        string connectionString = "server=localhost;user id=root; password=ucr.info;persistsecurityinfo=True;database=pizzeriaelparque";
 
         public Report ConsulReports_Product(DateTime startDate, DateTime endDate, int CodeProduct)
         {

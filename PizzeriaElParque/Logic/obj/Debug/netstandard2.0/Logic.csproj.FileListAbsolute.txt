@@ -55,3 +55,17 @@ C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\n
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Logic.deps.json
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Logic.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Logic.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Data.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Object.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Data.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\bin\Debug\netstandard2.0\Object.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csprojAssemblyReference.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csproj.CoreCompileInputs.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfoInputs.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.AssemblyInfo.cs
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.csproj.CopyComplete
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Logic\obj\Debug\netstandard2.0\Logic.pdb
