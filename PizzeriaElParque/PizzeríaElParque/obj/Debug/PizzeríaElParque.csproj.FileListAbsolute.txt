@@ -1,11 +1,3 @@
-2ad18cd279683ec05c71255b43189056ebcc660d
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Collections.Immutable.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Reflection.Metadata.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\VBCSCompiler.exe
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\PizzeríaElParque.dll.config
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\PizzeríaElParque.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\PizzeríaElParque.pdb
@@ -16,13 +8,18 @@ C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\csi.exe.config
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\csi.rsp
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.VisualBasic.Core.targets
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\Microsoft.Win32.Primitives.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.AppContext.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Collections.Immutable.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Console.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Diagnostics.Process.dll
@@ -32,6 +29,7 @@ C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.IO.FileSystem.DriveInfo.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.IO.FileSystem.Primitives.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.IO.Pipes.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Reflection.Metadata.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Security.AccessControl.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Security.Claims.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\System.Security.Cryptography.Algorithms.dll
@@ -49,6 +47,7 @@ C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\vbc.exe
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\vbc.exe.config
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\vbc.rsp
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\VBCSCompiler.exe
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\Microsoft.Win32.Primitives.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\PizzeríaElParque\bin\netstandard.dll
