@@ -13,57 +13,66 @@ namespace PizzeríaElParque {
     public partial class BetweenDates {
         
         /// <summary>
-        /// Control lbnCodeProduct.
+        /// Control LBStartDateBD.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbnCodeProduct;
+        protected global::System.Web.UI.WebControls.Label LBStartDateBD;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control StartDateProductBD.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl StartDateProductBD;
         
         /// <summary>
-        /// Control Label4.
+        /// Control LBEndDateBD.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label LBEndDateBD;
         
         /// <summary>
-        /// Control Label5.
+        /// Control EndDateProductBD.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.HtmlControls.HtmlInputGenericControl EndDateProductBD;
         
         /// <summary>
-        /// Control LabelPrueba.
+        /// Control GridViewBetweenDates.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelPrueba;
+        protected global::System.Web.UI.WebControls.GridView GridViewBetweenDates;
         
         /// <summary>
-        /// Control btnProbe.
+        /// Control btnSearchBD.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton btnProbe;
+        protected global::System.Web.UI.WebControls.LinkButton btnSearchBD;
+        
+        /// <summary>
+        /// Control btnRefrech.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnRefrech;
     }
 }
