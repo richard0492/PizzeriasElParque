@@ -10,3 +10,15 @@ C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\ne
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.dll
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.deps.json
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Data.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.dll
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.pdb
+D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
