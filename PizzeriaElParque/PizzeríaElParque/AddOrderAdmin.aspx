@@ -32,13 +32,33 @@
                         <button id="btnExpress" style="color: #FFFFFF; font-weight: bold; background-color: #800000; border: 3px solid #000000; height: 51px; width: 140px;">Express</button>
                         <br>
                         <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade">
-                         <asp:LinkButton ID="addProduct" runat="server" class="btn btn-default btn-lg, btn btn-primary"  BackColor="Maroon" Font-Bold="True" Font-Size="Medium" Height="41px" Width="242px" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" ForeColor="White"><i class="fa fa-plus"></i> Agregar producto a orden</asp:LinkButton>
+                         <asp:Label ID="Label1" runat="server" Font-Bold="True" Text="Código producto:"></asp:Label>
+&nbsp;&nbsp;
+                        <asp:TextBox ID="txtProductCode" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:LinkButton ID="addProduct" runat="server" class="btn btn-default btn-lg, btn btn-primary"  BackColor="Maroon" Font-Bold="True" Font-Size="Medium" Height="16px" Width="210px" BorderColor="Black" BorderStyle="Solid" BorderWidth="3px" ForeColor="White" OnClick="addProduct_Click"><i class="fa fa-plus"></i> Agregar producto a orden</asp:LinkButton>
            
                         <br>
                         <br>
 
                         <div class="form-group">
-                            &nbsp;</div>
+                        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" Width="505px"
+                    OnRowCommand="GridView1_RowCommand" OnRowDeleting="GridView1_RowDeleting"
+                    OnRowDeleted="GridView1_RowDeleted" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" CssClass="table-responsive">
+                    <Columns>
+                        <asp:CommandField ShowDeleteButton="True" HeaderText="Editar" />
+                        <asp:BoundField DataField="codproducto" HeaderText="Codigo" />
+                        <asp:BoundField DataField="desproducto" HeaderText="Descripcion" />
+                        <asp:BoundField DataField="preproducto" HeaderText="Precio" />
+                        <asp:TemplateField HeaderText="Cantidad">
+                            <ItemTemplate>
+                                <asp:TextBox ID="TextBox1" runat="server" Height="19px" Width="73px">1</asp:TextBox>
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:BoundField DataField="subtotal" HeaderText="Sub Total" />
+                    </Columns>
+                </asp:GridView>   
+                        </div>
 
                         <hr style=" color: #0000FF; line-height: 10px; height: 2px; width: 80%;" noshade="noshade">
                         <br>
@@ -71,6 +91,5 @@
     </div>
 
 </div>
-    <asp:GridView ID="GridView1" runat="server"></asp:GridView>
-
+    
 </asp:Content>

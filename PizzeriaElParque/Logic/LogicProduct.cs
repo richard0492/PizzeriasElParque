@@ -75,6 +75,17 @@ namespace Logic
             return product.name + "/" + product.MinInPrepara + "/" + product.price;
         }
 
+        /// <summary>
+        /// Returns an object of product type with its characteristics
+        /// </summary>
+        /// <param name="Product_Code"> Product code to be consulted</param>
+        /// <returns>object product</returns>
+        public List<Product> consultProductObject(String Product_Code)
+        {
+            return dataProducts.ConsultProduct(Product_Code);
+
+            }
+
         public string ConsultProductCode(String Product_Code)
         {
             Product product = new Product();

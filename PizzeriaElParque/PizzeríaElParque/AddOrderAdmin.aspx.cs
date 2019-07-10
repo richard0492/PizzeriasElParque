@@ -93,30 +93,40 @@ namespace PizzeríaElParque
                 }
             }
 
-            orderList = order.lastOrder();
-            table.Columns.Add("Código");
-            table.Columns.Add("Nombre");
-            table.Columns.Add("Cantidad");
-            table.Columns.Add("Total");
+            
 
-            idLineOrder = new int[order.ConsulLineOders(orderList).Count];
+            //  idLineOrder = new int[order.ConsulLineOders(orderList).Count];
 
-            for (int i = 0; i < order.ConsulLineOders(orderList).Count; i++)
-            {
-                DataRow row = table.NewRow();
-                row["Código"] = order.ConsulLineOders(orderList)[i].productId;
-                row["Nombre"] = order.ConsulLineOders(orderList)[i].nameProduct;
-                row["Cantidad"] = order.ConsulLineOders(orderList)[i].quantity;
-                row["Total"] = order.ConsulLineOders(orderList)[i].price;
-                idLineOrder[i] = order.ConsulLineOders(orderList)[i].lineOrderID;
-                table.Rows.Add(row);
-            }
+            /* for (int i = 0; i < order.ConsulLineOders(orderList).Count; i++)
+             {
+                 DataRow row = table.NewRow();
+                 row["Código"] = order.ConsulLineOders(orderList)[i].productId;
+                 row["Nombre"] = order.ConsulLineOders(orderList)[i].nameProduct;
+                 row["Cantidad"] = order.ConsulLineOders(orderList)[i].quantity;
+                 row["Total"] = order.ConsulLineOders(orderList)[i].price;
+                 idLineOrder[i] = order.ConsulLineOders(orderList)[i].lineOrderID;
+                 table.Rows.Add(row);
+             }*/
 
-            GridView1.DataSource = table;
-            GridView1.DataBind();
+
 
         }
-        
-      
+        public void loadTable() {
+
+            orderList = order.lastOrder();
+            table.Columns.Add("codigoProducto", System.Type.GetType("System.String"));
+            table.Columns.Add("descripcionProducto", System.Type.GetType("System.String"));
+            table.Columns.Add("precioProducto", System.Type.GetType("System.Double"));
+            table.Columns.Add("subTotal", System.Type.GetType("System.Double"));
+            table.Columns.Add("cantidadProducto", System.Type.GetType("System.Int32"));
+
+        }
+
+        protected void addProduct_Click(object sender, EventArgs e)
+        {
+            int code = Convert.ToInt32(txtProductCode.Text.Trim());
+            
+        }
     }
+
 }
