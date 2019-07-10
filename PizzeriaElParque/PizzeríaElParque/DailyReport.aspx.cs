@@ -161,7 +161,7 @@ namespace PizzeríaElParque
                     ErrorMessage("El codigo del producto debe ser mayor a cero");
 
                 }
-                else if (startDate < endDate)
+                else if (startDate > endDate)
                 {
 ;
                     ErrorMessage("Las fechas son incorrectas");

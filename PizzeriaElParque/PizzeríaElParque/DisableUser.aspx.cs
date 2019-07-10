@@ -11,13 +11,20 @@ using Object;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// clase encargada de la parte visual para deshabilitar un usuario
+    /// </summary>
     public partial class DisableUser : System.Web.UI.Page
     {
         string[] nameUser;
         string[] nameUserModify;
         LogicUser data = new LogicUser();
 
-
+        /// <summary>
+        /// Se encarga de verificar que tipo de usuario esta ingresando la pagina,para asignar sus funciones según su rol.
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -122,11 +129,21 @@ namespace PizzeríaElParque
            
         }
 
+        /// <summary>
+        /// Metodo encargado de envar los datos para deshabilitar un usuario en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void btbDisable_Click(object sender, EventArgs e)
         {
             data.DeleteUser(Convert.ToInt32(tbIDCard.Text.Trim()),'n');
         }
 
+        /// <summary>
+        /// Metodo encragado de modificar el estado del usuario en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void dlEmployees_SelectedIndexChanged(object sender, EventArgs e)
         {
             string nameM = dlEmployees.SelectedItem.ToString();

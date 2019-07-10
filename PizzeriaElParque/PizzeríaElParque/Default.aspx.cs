@@ -12,10 +12,18 @@ using System.Web.Services;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// Clase encragada de la pagina principal de ingreso de usuario
+    /// </summary>
     public partial class WebForm1 : System.Web.UI.Page
     {
         LogicUser data = new LogicUser();
 
+        /// <summary>
+        /// Metodo encargado de envar los datos para deshabilitar un usuario en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
 
@@ -76,6 +84,11 @@ namespace PizzeríaElParque
             }
         }
 
+        /// <summary>
+        /// Metodo encargado de asignar la acción al boton para  optener los datos de entrada para enviarlos a la capa lógica para realizar el rpoceso de ingreso.
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void btnLogin_Click(object sender, EventArgs e)
         {
 
@@ -146,6 +159,11 @@ namespace PizzeríaElParque
 
         }
 
+        /// <summary>
+        /// Metodo encargado de asignar la acción al boton para desplegar una ventana para optener los datos de crear una nueva contraseñapara el usuario
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void newPasswordUser_Click1(object sender, EventArgs e)
         {
 

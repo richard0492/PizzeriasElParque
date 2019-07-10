@@ -10,11 +10,20 @@ using Logic;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// Pagina encaragada de mostrar la lista de usuarios
+    /// </summary>
     public partial class ListUser : System.Web.UI.Page
     {
         string[] nameUser;
         LogicUser user = new LogicUser();
 
+
+        /// <summary>
+        /// Se encarga de verificar que tipo de usuario esta ingresando la pagina,para asignar sus funciones según su rol.
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)

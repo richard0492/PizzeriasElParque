@@ -9,11 +9,19 @@ using Logic;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// Clase encargada de realizar la gráfica de la pagina de agregar productos
+    /// </summary>
     public partial class AddProduct : System.Web.UI.Page
     {
         string[] nameUser;
         LogicProduct product = new LogicProduct();
-
+        
+        /// <summary>
+        /// Metodo encargado de envar los datos para deshabilitar un usuario en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -90,12 +98,21 @@ namespace PizzeríaElParque
             }
         }
 
+        /// <summary>
+        /// Metodo encargado de asignar la acción al boton para optener los datos de entrada otorgados para el usuario para enviarlos a la capa lógica para agregar producto
+        /// </summary>
+        /// <param name="sender">Objeto gnérico</param>
+        /// <param name="e">Evento</param>
         protected void btbAgregar_Click(object sender, EventArgs e)
         {
             
             product.InsertProduct(Convert.ToInt32(Identification.Text.Trim()), txtName.Text.Trim(), " ", Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue), 0);
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void txtName_TextChanged(object sender, EventArgs e)
         {
             if (IsPostBack)

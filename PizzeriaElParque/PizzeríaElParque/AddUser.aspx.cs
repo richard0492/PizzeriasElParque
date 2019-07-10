@@ -9,11 +9,19 @@ using Logic;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// Clase encargada de realizar la gráfica para agregar usuarios
+    /// </summary>
     public partial class AgregarAdmin : System.Web.UI.Page
     {
         string[] nameUser;
         LogicUser user = new LogicUser();
-
+       
+        /// <summary>
+        /// Metodo encargado de envar los datos para deshabilitar un usuario en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -88,7 +96,11 @@ namespace PizzeríaElParque
                 }
             }
         }
-
+        /// <summary>
+        /// Metodo encargado de asignar la accion al boton para optener los datos de entrada otorgados por en usuario y envarlos a la capalógica para agregar un unsuario
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void btbAgregar_Click(object sender, EventArgs e)
         {
             user.InsertUser(Convert.ToInt32(Identification.Text.Trim()),"",txtName.Text.Trim(),Convert.ToInt32(DropDownList1.SelectedValue),txtSecondName.Text.Trim(),txtLastName.Text.Trim(),txtSecondLastName.Text.Trim());
