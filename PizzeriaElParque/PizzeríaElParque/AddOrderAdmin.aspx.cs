@@ -18,6 +18,7 @@ namespace PizzeríaElParque
         int[] idLineOrder;
         int orderList;
         int posicion;
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -58,7 +59,7 @@ namespace PizzeríaElParque
                     }
                 }
                 Session["Admin"].ToString();
-                
+
             }
             catch (Exception ex)
             {
@@ -93,30 +94,54 @@ namespace PizzeríaElParque
                 }
             }
 
+           
+
             orderList = order.lastOrder();
             table.Columns.Add("Código");
             table.Columns.Add("Nombre");
             table.Columns.Add("Cantidad");
             table.Columns.Add("Total");
 
-            idLineOrder = new int[order.ConsulLineOders(orderList).Count];
+            //idLineOrder = new int[order.ConsulLineOders(orderList).Count];
 
-            for (int i = 0; i < order.ConsulLineOders(orderList).Count; i++)
-            {
-                DataRow row = table.NewRow();
-                row["Código"] = order.ConsulLineOders(orderList)[i].productId;
-                row["Nombre"] = order.ConsulLineOders(orderList)[i].nameProduct;
-                row["Cantidad"] = order.ConsulLineOders(orderList)[i].quantity;
-                row["Total"] = order.ConsulLineOders(orderList)[i].price;
-                idLineOrder[i] = order.ConsulLineOders(orderList)[i].lineOrderID;
-                table.Rows.Add(row);
-            }
+            //for (int i = 0; i < order.ConsulLineOders(orderList).Count; i++)
+            //{
+            //    DataRow row = table.NewRow();
+            //    row["Código"] = order.ConsulLineOders(orderList)[i].productId;
+            //    row["Nombre"] = order.ConsulLineOders(orderList)[i].nameProduct;
+            //    row["Cantidad"] = order.ConsulLineOders(orderList)[i].quantity;
+            //    row["Total"] = order.ConsulLineOders(orderList)[i].price;
+            //    idLineOrder[i] = order.ConsulLineOders(orderList)[i].lineOrderID;
+            //    table.Rows.Add(row);
 
-            GridView1.DataSource = table;
-            GridView1.DataBind();
 
+            //    GridView1.DataSource = table;
+            //    GridView1.DataBind();
+
+
+
+            //}
         }
-        
-      
+
+        protected void btnLocal_Click(object sender, EventArgs e)
+        {
+            phone.Visible = false;
+            direction.Visible = false;
+            tbDirection.Visible = false;
+            tbPhone.Visible = false;
+            lbtable.Visible = true;
+            txtNumTable.Visible = true;
+        }
+
+        protected void btnExpress_Click(object sender, EventArgs e)
+        {
+            phone.Visible = true;
+            direction.Visible = true;
+            tbDirection.Visible = true;
+            tbPhone.Visible = true;
+            lbtable.Visible = false;
+            txtNumTable.Visible = false;
+        }
     }
+
 }

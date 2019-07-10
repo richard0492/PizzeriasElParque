@@ -22,3 +22,5 @@ D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.dll
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\bin\Debug\netstandard2.0\Object.pdb
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.Properties.Resources.resources
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Data\obj\Debug\netstandard2.0\Data.csproj.GenerateResource.cache

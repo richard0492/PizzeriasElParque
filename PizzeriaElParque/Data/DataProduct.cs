@@ -10,7 +10,7 @@ namespace Data
     public class DataProducts
     {
 
-        String dataBase = @"server=localhost; user id=root; password=ucr.info; database=pizzeriaelparque";
+        String dataBase = @"server=localhost; user id=root; password=root; database=pizzeriaelparque";
 
         public List<Product> ConsulProducts()
         {

@@ -22,6 +22,15 @@ namespace PizzeríaElParque {
         protected global::System.Web.UI.WebControls.TextBox txtClientName;
         
         /// <summary>
+        /// Control lbtable.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbtable;
+        
+        /// <summary>
         /// Control txtNumTable.
         /// </summary>
         /// <remarks>
@@ -29,6 +38,24 @@ namespace PizzeríaElParque {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNumTable;
+        
+        /// <summary>
+        /// Control btnLocal.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnLocal;
+        
+        /// <summary>
+        /// Control btnExpress.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton btnExpress;
         
         /// <summary>
         /// Control addProduct.
@@ -40,22 +67,40 @@ namespace PizzeríaElParque {
         protected global::System.Web.UI.WebControls.LinkButton addProduct;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control direction.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Label direction;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control tbDirection.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox tbDirection;
+        
+        /// <summary>
+        /// Control phone.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label phone;
+        
+        /// <summary>
+        /// Control tbPhone.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbPhone;
         
         /// <summary>
         /// Control btnAgregar.

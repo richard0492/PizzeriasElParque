@@ -13,7 +13,7 @@ namespace Data
     /// </summary>
     public class DataReport
     {
-        string connectionString = "server=localhost;user id=root; password=ucr.info;persistsecurityinfo=True;database=pizzeriaelparque";
+        string connectionString = "server=localhost;user id=root; password=root;persistsecurityinfo=True;database=pizzeriaelparque";
 
         /// <summary>
         /// Consulta un producto en la base de datos mediante un strore procedure usando un codigo especifico y devulve una lista con  sus datos.
