@@ -52,7 +52,7 @@
 &nbsp;
 <asp:Label id="phone" runat="server" Text="Teléfono" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; color: #000000" Visible="false"></asp:Label>
                             <asp:TextBox ID="tbPhone" runat="server" TextMode="Number" Font-Bold="True" Font-Names="Lucida Sans" Visible="false"></asp:TextBox>
-                            </label>
+                            
                             <br>
                         </div>
                         <br />

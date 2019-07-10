@@ -3,16 +3,22 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form id="formOut" runat="server">
-        <div id="menuChef">
+        <div id="menuChef" style="text-align:center">
             <center>Cocinero/a:</center>
             <center><asp:Label ID="lbNombre" runat="server" Text="Nombre" Font-Bold="True" Font-Size="Medium" ForeColor="White"></asp:Label> </center>
             <center><asp:LinkButton class="btn btn-info btn-lg, btn btn-primary" ID="btnLogout" runat="server" OnClick="btnLogout_Click"><i class="fa fa-sign-out"></i> Cerrar Sesión</asp:LinkButton></center>
             <br />
         </div>
         <br />
-        <div class="well">
+        <div class="well1">
             <div>
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div class="well2">
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
         </div>
