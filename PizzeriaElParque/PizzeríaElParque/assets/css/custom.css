@@ -39,6 +39,24 @@ body {
     border: 0px solid #000000;
     margin-top: 0px;
 }
+.well1 {
+    background-color: rgba(245, 81, 6, 0.699);
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 0px solid #000000;
+    margin-top: 0px;
+    width:100%;
+}
+.well2 {
+    background-color: rgba(245, 81, 6, 0.699);
+    border-radius: 50px 50px 50px 50px;
+    -moz-border-radius: 50px 50px 50px 50px;
+    -webkit-border-radius: 50px 50px 50px 50px;
+    border: 0px solid #000000;
+    margin-top: 0px;
+    width: 100%;
+}
 
 #menuChef{
     background-color: rgb(29, 147, 216);
@@ -49,7 +67,7 @@ body {
     -moz-border-radius: 30px 30px 30px 30px;
     -webkit-border-radius: 30px 30px 30px 30px;
     border: 0px solid #000000;
-    margin-left: 1000px;
+    margin-left: auto;
     padding-left: 15px;
     padding-top: 15px;
 }
@@ -159,7 +177,7 @@ p {
         width: 70px;
         height: 70px;
         line-height: 75px;
-        vertical-align: middle;
+        vertical-align: auto;
         text-align: center;
         font-size: 40px;
     }

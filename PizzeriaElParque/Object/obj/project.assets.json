@@ -1685,23 +1685,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {},
+    "C:\\Users\\a\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj",
+      "projectUniqueName": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj",
       "projectName": "Object",
-      "projectPath": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\admin\\Documents\\UCR TODOS\\UCR I 2019\\Ingeniería de Software\\rep\\PizzeriasElParque\\PizzeriaElParque\\Object\\obj\\",
+      "projectPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\Object.csproj",
+      "packagesPath": "C:\\Users\\a\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a\\Documents\\GitHub\\PizzeriasElParque\\PizzeriaElParque\\Object\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

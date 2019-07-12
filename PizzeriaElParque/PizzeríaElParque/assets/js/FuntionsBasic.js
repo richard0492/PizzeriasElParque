@@ -12,6 +12,12 @@ function showModal() {
     });
 }
 
+function showModalConfirm() {
+    $(document).ready(function () {
+        $("#MyModal2").modal({ backdrop: 'static', keyboard: false });
+    });
+}
+
 function showModalOrder() {
     $(document).ready(function () {
         $("#MyModal2").modal({ backdrop: 'static', keyboard: false });

@@ -9,31 +9,32 @@ namespace Object
     /// </summary>
    public class Order
     {
-        public int estadeId { set; get; }
-        public int orderID { set; get; }
+        public string estadeId { set; get; }
+        public int IDcard { set; get; }
         public string nameClient { set; get; }
         public string additional { set; get; }
         public string address { set; get; }
         public int phone { set; get; }
-        public char orderType { set; get; }
-        public string tableNumber { set; get; }
-        public int partyId { set; get; }
-        /// <summary>
-        /// Constructor
-        /// </summary>
+        public int orderType { set; get; }
+        public int orderID { set; get; }
+        public string nameEmployed { set; get; }
+
+
         public Order()
         {
         }
 
-        public Order(int statadId, int IDcard, string nomeClient, char orderType)
+        public Order(int orderID, string statadId, string nameEmployed, string nomeClient, string additional, int orderType)
         {
+            this.orderID = orderID;
             this.estadeId = statadId;
-            this.orderID = IDcard;
+            this.nameEmployed = nameEmployed;
             this.nameClient = nomeClient;
+            this.additional = additional;
             this.orderType = orderType;
         }
 
-        public Order(int estadeId, int IDcard, string nameClient, string additional, string address, int phone, char orderType)
+        public Order(string estadeId, int IDcard, string nameClient, string additional, string address, int phone, int orderType)
         {
             this.estadeId = estadeId;
             this.orderID = IDcard;

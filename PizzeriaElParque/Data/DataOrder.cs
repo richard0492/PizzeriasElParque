@@ -15,6 +15,29 @@ namespace Data
         public List<Order> ConsulOders()
         {
             List<Order> orders = new List<Order>();
+
+            MySqlConnection connectionUser = new MySqlConnection(connectionString);
+
+            string query = "CALL consultarTodasLasOrdenes()";
+
+            using (MySqlCommand cmd = new MySqlCommand(query, connectionUser))
+            {
+
+                connectionUser.Open();
+
+                using (IDataReader reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        orders.Add(new Order(int.Parse(reader[0].ToString()),reader[1].ToString(), reader[2].ToString(), reader[3].ToString(), reader[4].ToString(), int.Parse(reader[5].ToString())));
+
+                    }
+
+
+                }
+                connectionUser.Close();
+            }
+
             return orders;
         }
 
@@ -23,6 +46,28 @@ namespace Data
             Order order = new Order();
             return order;
         }
+
+        public void modifyEstadeOrder(int ordenId, int estadeId) {
+
+            string query = "CALL ModificarEstadoOrden(@P0,@P1)";
+
+            MySqlConnection conn = new MySqlConnection(connectionString);
+
+            using (MySqlCommand command = new MySqlCommand(query, conn))
+            {
+                command.Parameters.AddWithValue("@P0", ordenId);
+                command.Parameters.AddWithValue("@P1", estadeId);
+
+
+                conn.Open();
+                command.ExecuteNonQuery();
+                conn.Close();
+            }
+
+
+
+        }
+
 
         public List<LineOrder> ConsultLineOder(int Oder_ID)
         {
@@ -44,7 +89,7 @@ namespace Data
                 {
                         while (reader.Read())
                         {
-                            orders.Add(new LineOrder(int.Parse(reader[0].ToString()),int.Parse(reader[1].ToString()), reader[2].ToString(), int.Parse(reader[3].ToString()), Convert.ToDouble(reader[4].ToString())));
+                            orders.Add(new LineOrder(int.Parse(reader[0].ToString()),int.Parse(reader[1].ToString()), reader[2].ToString(), int.Parse(reader[3].ToString()), Convert.ToDouble(reader[4].ToString()),DateTime.Parse(reader[5].ToString()),int.Parse(reader[6].ToString())));
 
                         }
                     

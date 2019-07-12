@@ -17,6 +17,7 @@ namespace Object
         public int productId { set; get; }
         public string nameProduct { set; get; }
         public int lineOrderID { set; get; }
+        public int timeMinuteCook { set; get; }
 
         /// <summary>
         /// Constructor
@@ -36,13 +37,15 @@ namespace Object
         }
 
 
-        public LineOrder(int lineOrderID,int productId, string nameProduct, int quantity, double price)
+        public LineOrder(int lineOrderID,int productId, string nameProduct, int quantity, double price, DateTime startHour, int timeMinuteCook)
         {
             this.lineOrderID = lineOrderID;
             this.nameProduct = nameProduct;
             this.productId = productId;
             this.quantity = quantity;
             this.price = price;
+            this.startHour = startHour;
+            this.timeMinuteCook = timeMinuteCook;
         }
 
         public LineOrder(int quantity, double price, DateTime date, DateTime startHour, int orderId, int productId, int lineOrderID)
