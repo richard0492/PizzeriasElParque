@@ -47,6 +47,7 @@ namespace Logic
         public List<Order> ConsulOders()
         {
             List<Order> orders = new List<Order>();
+            orders = dataLO.ConsulOders();
             return orders;
         }
 
@@ -62,8 +63,10 @@ namespace Logic
             return false;
         }
 
-        public bool Change_State_Order(String Odere_ID,String State)
+        public bool Change_State_Order(int Odrer_ID,int State)
         {
+
+            dataLO.modifyEstadeOrder(Odrer_ID, State);
 
             return false;
         }

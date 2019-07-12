@@ -1,11 +1,3 @@
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.deps.json
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.pdb
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csproj.CoreCompileInputs.cache
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfoInputs.cache
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
-C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.deps.json
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.dll
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.pdb
@@ -15,4 +7,12 @@ D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Objec
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
 D:\User Jennifer Alfaro\Documents\GitHub\PizzeriaElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.deps.json
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\bin\Debug\netstandard2.0\Object.pdb
 C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csprojAssemblyReference.cache
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.csproj.CoreCompileInputs.cache
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfoInputs.cache
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.AssemblyInfo.cs
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.dll
+C:\Users\a\Documents\GitHub\PizzeriasElParque\PizzeriaElParque\Object\obj\Debug\netstandard2.0\Object.pdb
