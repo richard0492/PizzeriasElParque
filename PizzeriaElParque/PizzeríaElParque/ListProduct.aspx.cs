@@ -56,6 +56,7 @@ namespace PizzeríaElParque
                 }
                 Session["Admin"].ToString();
                 
+                
 
                 GridView1.DataSource = product.ConsulProducts();
                 GridView1.DataBind();

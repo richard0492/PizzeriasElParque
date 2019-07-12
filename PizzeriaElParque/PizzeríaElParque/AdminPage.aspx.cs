@@ -8,10 +8,18 @@ using System.Web.UI.WebControls;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// Clase encargada de realizar la  administración de paginas
+    /// </summary>
     public partial class AdminPage : System.Web.UI.Page
     {
         string[] nameUser;
-
+        
+        /// <summary>
+        /// Metodo encargado de envar los datos para deshabilitar un usuario en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)

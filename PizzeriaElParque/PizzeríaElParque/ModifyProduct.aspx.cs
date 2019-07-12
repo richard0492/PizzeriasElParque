@@ -9,11 +9,21 @@ using Logic;
 
 namespace PizzeríaElParque
 {
+
+    /// <summary>
+    /// clase encargada de la pagina de modificar producto
+    /// </summary>
     public partial class ModifyProduct : System.Web.UI.Page
     {
         string[] nameUser;
         LogicProduct product = new LogicProduct();
 
+
+        /// <summary>
+        /// Se encarga de verificar que tipo de usuario esta ingresando la pagina,para asignar sus funciones según su rol.
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -119,12 +129,22 @@ namespace PizzeríaElParque
             }
         }
 
+        /// <summary>
+        /// Metodo encargado de aignar al botón la acción para optener los datos de entrada asignados  por el usuario y enviarlos a la capa lógica para modificar el producto
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void btnModify_Click(object sender, EventArgs e)
         {
             product.ModifyProduct(Convert.ToInt32(Identification.Text.Trim()),txtName.Text.Trim(),"",Convert.ToDouble(txtPrice.Text.Trim()), Convert.ToInt32(DropDownListPreparationTime.SelectedValue),0);
 
         }
 
+        /// <summary>
+        /// Metodo para asignar la acción al boton y consultar un producto
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             string[] splitProduct;

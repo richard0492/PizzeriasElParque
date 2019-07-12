@@ -7,12 +7,21 @@ using Object;
 
 namespace Data
 {
-    public class DataUser
+/// <summary>
+///Clasa encargada del manejo de datos de usuario 
+/// </summary>
+
+ 
+  public class DataUser
     {
 
         string connectionString = "server=localhost;user id=root; password=root;persistsecurityinfo=True;database=pizzeriaelparque";
 
-
+        /// <summary>
+        /// Metodo encargado de consultar a la base de datos los usuarios
+        /// </summary>
+        /// <returns>Lista de usuarios</returns>
+        /// 
         public List<User> ConsultUsers()
         {
             List<User> users = new List<User>();
@@ -45,7 +54,12 @@ namespace Data
             return users;
 
         }
-
+       
+        /// <summary>
+        /// Metodo encargado de consultar a la base de datos los usuarios
+        /// </summary>
+        /// <returns>Lista de usuarios</returns>
+        /// 
         public List<User> ConsultUsersList()
         {
             List<User> users = new List<User>();
@@ -79,6 +93,11 @@ namespace Data
 
         }
 
+        /// <summary>
+        /// Metodo encargado de consultar a la base de datos un usuario mediante su identificacion
+        /// </summary>
+        /// <param name="ID"> Identificacion de usuario</param>
+        /// <returns>Nombre completo de usuario</returns>
         public String ConsultUsersModify(string ID)
         {
 
@@ -109,6 +128,11 @@ namespace Data
 
         }
 
+        /// <summary>
+        /// Metodo encargado de consulta a la base de datos el tipo de usuario que esta ingresando al sistema
+        /// </summary>
+        /// <param name="IDCard">Identificación de usuario</param>
+        /// <returns>usuario</returns>
         public User typeUser(int IDCard)
         {
 
@@ -135,6 +159,11 @@ namespace Data
             return user;
         }
 
+        /// <summary>
+        /// metodo encargado de de verificra en la base de datos si es el primer ingreso del usuario
+        /// </summary>
+        /// <param name="IDCard">Identificador de usuario</param>
+        /// <returns>Usario</returns>
         public User firstS(int IDCard)
         {
 
@@ -161,7 +190,13 @@ namespace Data
             return user;
         }
         
-
+        /// <summary>
+        ///  Metodo encargado de modificar la contraseña de usuario
+        /// </summary>
+        /// <param name="IDCard">Identificador de usario</param>
+        /// <param name="password">Contraseña de usuario</param>
+        /// <param name="firstStart">Verificador de primer ingreso de usuario</param>
+        /// <returns>verdadero o falso</returns>
         public Boolean modifyPassword(int IDCard, string password, char firstStart) {
 
             string query = "CALL ModificarContraseñaUsuario(@P0,@P1,@P2)";
@@ -183,7 +218,12 @@ namespace Data
             return false;
 
         }
-
+        
+        /// <summary>
+        /// Metodo encargado modificar los datos de un unsiario en la base de datos
+        /// </summary>
+        /// <param name="user">Usuario</param>
+        /// <returns>Verdadero o falso</returns>
         public Boolean modifyUser(User user)
         {
 
@@ -211,6 +251,10 @@ namespace Data
 
         }
 
+        /// <summary>
+        /// Metodo encargado de insertar un usuario en la base de datos
+        /// </summary>
+        /// <param name="user">Usuario</param>
         public void InsertUser(User user)
         {
             string query = "CALL InsertarUsuario(@P0,@P1,@P2,@P3,@P4,@P5,@P6,@P7)";
@@ -234,7 +278,12 @@ namespace Data
             }
         }
 
-        public void DeleteUser(int Product_Code, char enabled)
+        /// <summary>
+        /// Metodo encargado de deshabilitar un usario en la base de datos
+        /// </summary>
+        /// <param name="user_ID">Identificador de usuario</param>
+        /// <param name="enabled">Verificador para deshabilitar un usuario</param>
+        public void DeleteUser(int user_ID, char enabled)
         {
             string query = "CALL ModificarHabilitadoUsuario(@p0,@p1)";
 
@@ -245,14 +294,18 @@ namespace Data
             {
 
                 cmd.Parameters.AddWithValue("@p0", enabled);
-                cmd.Parameters.AddWithValue("@p1", Product_Code);
+                cmd.Parameters.AddWithValue("@p1", user_ID);
                 product.Open();
                 cmd.ExecuteNonQuery();
                 product.Close();
             }
         }
         
-
+        /// <summary>
+        /// Metodo encargado de consultar un usuario en la base de datos
+        /// </summary>
+        /// <param name="ID">Identificador de usuario</param>
+        /// <returns>Nombre completo de usuario</returns>
         public String ConsultUser(String ID)
         {
 

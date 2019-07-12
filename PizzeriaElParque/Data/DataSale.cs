@@ -7,6 +7,7 @@ namespace Data
 {
     class DataSale
     {
+
         public List<Sale> ConsulSale()
         {
             List<Sale> sales = new List<Sale>();

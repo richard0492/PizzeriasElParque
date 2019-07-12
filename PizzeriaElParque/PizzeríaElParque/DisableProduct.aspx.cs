@@ -9,11 +9,19 @@ using Logic;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// clase encargada de la parte visual para deshabilitar un producto
+    /// </summary>
     public partial class DisableProduct : System.Web.UI.Page
     {
         string[] nameUser;
         LogicProduct product = new LogicProduct();
 
+        /// <summary>
+        /// Se encarga de verificar que tipo de usuario esta ingresando la pagina,para asignar sus funciones según su rol.
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -89,11 +97,21 @@ namespace PizzeríaElParque
             }
         }
 
+        /// <summary>
+        /// Metodo encargado de envar los datos para deshabilitar un producto en la capa lógica
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void btnDisable_Click(object sender, EventArgs e)
         {
             product.DeleteProduct(Convert.ToInt32(Identification.Text.Trim()), 'n');
         }
 
+        /// <summary>
+        /// Metodo encargado para asignar la acción de deshabilitar un producto a un botón
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
             string[] splitProduct;

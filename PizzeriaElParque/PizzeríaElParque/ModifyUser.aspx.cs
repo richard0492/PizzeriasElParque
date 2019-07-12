@@ -10,12 +10,21 @@ using Object;
 
 namespace PizzeríaElParque
 {
+    /// <summary>
+    /// clase encargada de la pagina de modificar usuario
+    /// </summary>
     public partial class ModifyUser : System.Web.UI.Page
     {
         string[] nameUser;
         string[] nameUserModify;
 
         LogicUser data = new LogicUser();
+
+        /// <summary>
+        /// Se encarga de verificar que tipo de usuario esta ingresando la pagina,para asignar sus funciones según su rol.
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -120,12 +129,22 @@ namespace PizzeríaElParque
             }
         }
 
+        /// <summary>
+        /// Metodo encargado de aignar al botón la acción para optener los datos de entrada asignados  por el usuario y enviarlos a la capa lógica para modificar el usuario
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void btbModify_Click(object sender, EventArgs e)
         {
             
             data.ModifyUser(Convert.ToInt32(tbIDCard.Text.Trim()),txtName.Text.Trim(),'s',numberType(DropDownList1.SelectedItem.Text),txtSecondName.Text.Trim(),txtLastName.Text.Trim(),txtSecondLastName.Text.Trim());
         }
 
+        /// <summary>
+        /// Metodo encargado de otorgar un valor según el rol de usuario
+        /// </summary>
+        /// <param name="type">Tipo de usuario</param>
+        /// <returns>numero según rol de usuario</returns>
         protected int numberType(string type) {
 
             int numberType = 0;
@@ -147,6 +166,11 @@ namespace PizzeríaElParque
             return numberType;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender">Objeto genérico</param>
+        /// <param name="e">Evento</param>
         protected void dlEmployees_SelectedIndexChanged(object sender, EventArgs e)
         {
             string nameM = dlEmployees.SelectedItem.ToString();
