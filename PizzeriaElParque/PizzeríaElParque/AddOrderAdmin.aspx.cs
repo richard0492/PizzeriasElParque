@@ -20,7 +20,11 @@ namespace PizzeríaElParque
         LogicProduct logicProduct = new LogicProduct();
 
         int orderList;
-
+        /// <summary>
+        /// Carga la página y incializa variables, así como comprueba el usuario con la sesión
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Session["cashier"] != null)
@@ -112,6 +116,9 @@ namespace PizzeríaElParque
 
 
         }
+        /// <summary>
+        /// Carga el dataTable con el formato de la factura de las lineas de orden
+        /// </summary>
         public void loadTable() {
             if (Session["Order"] == null)
             {
@@ -130,7 +137,11 @@ namespace PizzeríaElParque
             }
 
         }
-
+        /// <summary>
+        /// Evento click para agragegar un producto a la orden
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void addProduct_Click(object sender, EventArgs e)
         {
 
@@ -139,18 +150,23 @@ namespace PizzeríaElParque
 
             
         }
-
+        /// <summary>
+        /// Agrega un un producto a la factura que se convierte en una linea de orden
+        /// </summary>
+        /// <returns> Boolean que confirma el resultado</returns>
         public Boolean addItemProduct() {
+
+
             string code;
-            if (txtProductCode.Text != "")
+            if (txtProductCode.Text != "")//Se comprueba los campos
             {
                 Product product = logicProduct.consultProductObject(txtProductCode.Text.Trim());
                 if (product.name != null)
                 {
-                    table = (DataTable)Session["Order"];
+                    table = (DataTable)Session["Order"];// se incializa el datatable que tiene la variable de sesión.
                     if (GridView1.Rows.Count != 0) {
 
-                        foreach (DataRow dr in table.Rows)
+                        foreach (DataRow dr in table.Rows)//Se recorre para agregar y actualizar valores en el grid y en el data table
                         {
                             if (dr["codigoProducto"].ToString() == product.code.ToString())
                             {
@@ -224,7 +240,11 @@ namespace PizzeríaElParque
             txtProductCode.Text = "";
             return true;
         }
-
+        /// <summary>
+        /// Se llama al evento para eliminar una fila de la linea de orden
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void GridView1_RowDeleting(object sender, GridViewDeleteEventArgs e)
         {
             string code;
@@ -251,6 +271,11 @@ namespace PizzeríaElParque
             }
             updateData();
         }
+        /// <summary>
+        /// Calcula el total de la orden de nuevo
+        /// </summary>
+        /// <param name="dt"></param>
+        /// <returns></returns>
         public double totalOrder(DataTable dt)
         {
             double total = 0;
@@ -260,13 +285,19 @@ namespace PizzeríaElParque
             }
             return total;
         }
-
+        /// <summary>
+        /// Evento que llama a actualizar
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnUpdate_Click(object sender, EventArgs e)
         {
             updateData();
         }
 
-
+        /// <summary>
+        /// Método para actualizar los datos que se muestran en el formuario
+        /// </summary>
         public void updateData(){
             //int i;
             double total = 0, price, subtotal = 0;
@@ -296,15 +327,15 @@ namespace PizzeríaElParque
                 total = total + subtotal;
             }
 
-            // iva = total * 0.13;
-            // subtotal = total - igv;
-
-            //  lblIGV.Text = igv.ToString("0.00");
-            // lblSubTotal.Text = subtotal.ToString("0.00");
+           
             lbTotal.Text = "₡ " + total.ToString("0.00");
 
         }
-
+        /// <summary>
+        /// Evento para renderizar componentes y ocultar otros si es orden de local
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnLocal_Click(object sender, EventArgs e)
         {
             checkExpress.Visible = false;
@@ -318,6 +349,11 @@ namespace PizzeríaElParque
             Session["TypeOrder"] = '1';
         }
 
+        /// <summary>
+        ///  Evento para renderizar componentes y ocultar otros si es orden de Express
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void btnExpress_Click(object sender, EventArgs e)
         {
             checkExpress.Visible = true;
@@ -359,7 +395,10 @@ namespace PizzeríaElParque
 
         }
       
-
+        /// <summary>
+        /// El evento que inserta la orden a la base de datos y tambien cada línea de orden de la factura
+        /// </summary>
+        /// <returns>Retorna un boolean con la confirmación de que se agregó</returns>
         public Boolean addOrderAndLineOrders() {
             if (validationForm() == true) {
 
@@ -431,7 +470,10 @@ namespace PizzeríaElParque
             
             return false;
         }
-
+        /// <summary>
+        /// Método que valida los campos del formulario dependiendo del tipo de orden que se inserte.
+        /// </summary>
+        /// <returns></returns>
         public Boolean validationForm() {
 
 
@@ -462,12 +504,20 @@ namespace PizzeríaElParque
                 return true;
         }
 
-      
+      /// <summary>
+      /// Evento que reedirecciona a la página madre.
+      /// </summary>
+      /// <param name="sender"></param>
+      /// <param name="e"></param>
         protected void lnkRedireccion_Click(object sender, EventArgs e)
         {
             Response.Redirect("AddOrderAdmin.aspx");
         }
-
+        /// <summary>
+        ///Evento con un contador de tiempo para que se actualicen las cantidades cada 2 segundos
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         protected void Unnamed2_Tick(object sender, EventArgs e)
         {
             updateData();

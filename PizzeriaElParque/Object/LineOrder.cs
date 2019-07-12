@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Object
 {
+    /// <summary>
+    /// Clase para objetos de líneas de orden
+    /// </summary>
     public class LineOrder
     {
         public int quantity { set; get; }
@@ -15,7 +18,9 @@ namespace Object
         public string nameProduct { set; get; }
         public int lineOrderID { set; get; }
 
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public LineOrder()
         {
         }

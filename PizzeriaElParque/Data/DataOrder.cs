@@ -57,7 +57,11 @@ namespace Data
 
             return orders;
         }
-
+        /// <summary>
+        /// Método para insertar una orden a la base de datos
+        /// </summary>
+        /// <param name="lineOrderToAdd"></param>
+        /// <returns> confirma la insercción con un boolean</returns>
         public Boolean insertLineOrder(LineOrder lineOrderToAdd)
         {
 
@@ -82,7 +86,11 @@ namespace Data
            
 
         }
-
+        /// <summary>
+        /// Método para insertar una línea de orden a la base de datos
+        /// </summary>
+        /// <param name="orderToInsert"></param>
+        /// <returns> confirma la insercción</returns>
         public Boolean insertOrder(Order orderToInsert)
         {
            
@@ -117,34 +125,11 @@ namespace Data
 
         }
 
-        public Boolean modifyLineOrder(int quantity, DateTime date, DateTime hour, int orderId, int productId, int lineOrderID)
-        {
-
-            string query = "CALL ModificarLineaOrden(@P0,@P1,@P2,@P3,@P4,@P5)";
-
-            MySqlConnection conn = new MySqlConnection(connectionString);
-
-            using (MySqlCommand command = new MySqlCommand(query, conn))
-            {
-                command.Parameters.AddWithValue("@P0", quantity);
-                command.Parameters.AddWithValue("@P1", date);
-                command.Parameters.AddWithValue("@P2", hour);
-                command.Parameters.AddWithValue("@P3", orderId);
-                command.Parameters.AddWithValue("@P4", productId);
-                command.Parameters.AddWithValue("@P5", lineOrderID);
-
-
-
-                conn.Open();
-                command.ExecuteNonQuery();
-                conn.Close();
-                return true;
-            }
-
-            return false;
-
-        }
-
+        
+        /// <summary>
+        /// Método que consulta el Id de la última orden insertada
+        /// </summary>
+        /// <returns> Retorna el Id de la última orden insertada</returns>
         public int LastOrder()
         {
 

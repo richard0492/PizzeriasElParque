@@ -82,11 +82,8 @@
                                 
                                     <br />
                                     <br />
-                                    <asp:Button ID="btnUpdate" runat="server" CssClass="btn btn-primary" Text="Actualizar" OnClick="btnUpdate_Click" Font-Bold="True" />
                                     <br />
                                     <br />
-                                    <asp:Label ID="lbDescription" runat="server" Text="Descripción de la orden:" Font-Bold="True" Font-Size="Medium"></asp:Label>
-                                    <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control" Height="80px" TextMode="MultiLine" Width="481px" style="max-height:80px;max-width:480px;min-height:80px;min-width:480px;" Font-Bold="True"></asp:TextBox>
                                     <br />
                                     <br />
                                     <asp:Label ID="Label2" runat="server" Font-Bold="True" Text="Total a Pagar:" ForeColor="Black" Font-Size="X-Large"></asp:Label>
@@ -94,9 +91,15 @@
                                     <asp:Label ID="lbTotal" runat="server" Font-Bold="True" ForeColor="Black" Font-Size="X-Large"></asp:Label>
                                
 
+                                    <br />
+                                    <br />
+                               
+
                                </ContentTemplate>
 </asp:UpdatePanel>
-
+ <asp:Label ID="lbDescription" runat="server" Text="Descripción de la orden:" Font-Bold="True" Font-Size="Medium"></asp:Label>
+                                    <asp:TextBox ID="txtDescription" runat="server" CssClass="form-control" Height="80px" TextMode="MultiLine" Width="481px" style="max-height:80px;max-width:480px;min-height:80px;min-width:480px;" Font-Bold="True"></asp:TextBox>
+                                   
                                
                                      <hr style=" color: #0000FF; line-height: 10px; height: 2px; width: 80%;" noshade="noshade">
                                 <br>

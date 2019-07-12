@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Object
 {
+    /// <summary>
+    /// Clase para objeto de la orden
+    /// </summary>
    public class Order
     {
         public int estadeId { set; get; }
@@ -15,7 +18,9 @@ namespace Object
         public char orderType { set; get; }
         public string tableNumber { set; get; }
         public int partyId { set; get; }
-
+        /// <summary>
+        /// Constructor
+        /// </summary>
         public Order()
         {
         }

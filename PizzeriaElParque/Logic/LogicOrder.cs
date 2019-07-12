@@ -45,14 +45,7 @@ namespace Logic
 
             return orders;
         }
-        public bool modifytLineOders(int quantity, DateTime date, DateTime hour, int orderId, int productId, int lineOrderID)
-        {
-
-
-            orderInData.modifyLineOrder(quantity, date, hour, orderId, productId, lineOrderID);
-
-            return true;
-        }
+       
 
         public int lastOrder() {
             return orderInData.LastOrder();
