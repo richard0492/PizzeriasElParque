@@ -396,25 +396,7 @@ namespace PizzeríaElParque
             //}
         }
 
-        protected void btnLocal_Click(object sender, EventArgs e)
-        {
-            phone.Visible = false;
-            direction.Visible = false;
-            tbDirection.Visible = false;
-            tbPhone.Visible = false;
-            lbtable.Visible = true;
-            txtNumTable.Visible = true;
-        }
-
-        protected void btnExpress_Click(object sender, EventArgs e)
-        {
-            phone.Visible = true;
-            direction.Visible = true;
-            tbDirection.Visible = true;
-            tbPhone.Visible = true;
-            lbtable.Visible = false;
-            txtNumTable.Visible = false;
-        }
+        
       
         /// <summary>
         /// El evento que inserta la orden a la base de datos y tambien cada línea de orden de la factura

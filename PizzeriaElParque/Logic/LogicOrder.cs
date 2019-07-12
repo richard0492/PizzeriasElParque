@@ -56,7 +56,7 @@ namespace Logic
         public List<Order> consultOrders()
         {
             List<Order> orders = new List<Order>();
-            orders = dataLO.ConsulOders();
+            orders = orderInData.ConsulOders();
             return orders;
         }
 
@@ -75,7 +75,7 @@ namespace Logic
         public bool Change_State_Order(int Odrer_ID,int State)
         {
 
-            dataLO.modifyEstadeOrder(Odrer_ID, State);
+            orderInData.modifyEstadeOrder(Odrer_ID, State);
 
             return false;
         }

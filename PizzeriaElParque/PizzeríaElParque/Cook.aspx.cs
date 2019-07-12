@@ -108,8 +108,7 @@ namespace PizzeríaElParque
 
         public void load() {
 
-            orders = order.ConsulOders();
-
+            orders = order.consultOrders();
 
             tableLocal.Columns.Add("Orden");
             tableLocal.Columns.Add("Estado");
@@ -123,11 +122,11 @@ namespace PizzeríaElParque
 
             for (int i = 0; i < orders.Count; i++)
             {
-                if (orders[i].orderType == 1)
+                if (orders[i].orderTypeNumber == 1)
                 {
                     DataRow row = tableLocal.NewRow();
                     row["Orden"] = orders[i].orderID;
-                    row["Estado"] = orders[i].estadeId;
+                    row["Estado"] = orders[i].estadeIdName;
                     row["Empleado"] = orders[i].nameEmployed;
                     row["Cliente"] = orders[i].nameClient;
 
@@ -139,11 +138,11 @@ namespace PizzeríaElParque
                 }
 
 
-                if (orders[i].orderType == 2)
+                if (orders[i].orderTypeNumber == 2)
                 {
                     DataRow row = tableExpress.NewRow();
                     row["Orden"] = orders[i].orderID;
-                    row["Estado"] = orders[i].estadeId;
+                    row["Estado"] = orders[i].estadeIdName;
                     row["Empleado"] = orders[i].nameEmployed;
                     row["Cliente"] = orders[i].nameClient;
 
@@ -236,7 +235,7 @@ namespace PizzeríaElParque
                     lineOrderGridView.DataSource = tableLineOrder;
                     lineOrderGridView.DataBind();
 
-                    lbClient.Text = ExpressGridView.Rows[crow].Cells[5].Text;
+                    //lbClient.Text = ExpressGridView.Rows[crow].Cells[5].Text.ToString();
 
                 }
             ScriptManager.RegisterClientScriptBlock(this, this.GetType(), "key", "showModal()", true);
