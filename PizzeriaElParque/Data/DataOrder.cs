@@ -58,29 +58,62 @@ namespace Data
             return orders;
         }
 
-        public Boolean insertLineOrder(int quantity, DateTime date, DateTime hour,int orderId, int productId)
+        public Boolean insertLineOrder(LineOrder lineOrderToAdd)
         {
 
-            string query = "CALL InsertarLineaOrden(@P0,@P1,@P2,@P3,@P4)";
+            string query = "CALL InsertarLineaOrden(@P0,@P1,@P2)";
 
-            MySqlConnection conn = new MySqlConnection(connectionString);
+            MySqlConnection conection = new MySqlConnection(connectionString);
 
-            using (MySqlCommand command = new MySqlCommand(query, conn))
+            using (MySqlCommand command = new MySqlCommand(query, conection))
             {
-                command.Parameters.AddWithValue("@P0", quantity);
-                command.Parameters.AddWithValue("@P1", date);
-                command.Parameters.AddWithValue("@P2", hour);
-                command.Parameters.AddWithValue("@P3", orderId);
-                command.Parameters.AddWithValue("@P4", productId);
+                command.Parameters.AddWithValue("@P0", lineOrderToAdd.quantity);
+                command.Parameters.AddWithValue("@P1",lineOrderToAdd.orderId);
+                command.Parameters.AddWithValue("@P2", lineOrderToAdd.productId);
+               
 
 
-                conn.Open();
+                conection.Open();
                 command.ExecuteNonQuery();
-                conn.Close();
+                conection.Close();
                 return true;
             }
 
-            return false;
+           
+
+        }
+
+        public Boolean insertOrder(Order orderToInsert)
+        {
+           
+            
+                string query = "CALL InsertarOrden(@P0,@P1,@P2,@P3,@P4,@P5,@P6,@P7,@P8)";
+
+                MySqlConnection conection = new MySqlConnection(connectionString);
+
+                using (MySqlCommand command = new MySqlCommand(query, conection))
+                {
+                    command.Parameters.AddWithValue("@P0", orderToInsert.estadeId);
+                    command.Parameters.AddWithValue("@P1", orderToInsert.partyId);
+                    command.Parameters.AddWithValue("@P2", orderToInsert.nameClient);
+                    command.Parameters.AddWithValue("@P3", orderToInsert.additional);
+                    command.Parameters.AddWithValue("@P4", orderToInsert.address);
+                    command.Parameters.AddWithValue("@P5", orderToInsert.phone);
+                    command.Parameters.AddWithValue("@P6", orderToInsert.orderType);
+                    command.Parameters.AddWithValue("@P7", orderToInsert.orderID);
+                    command.Parameters.AddWithValue("@P8", orderToInsert.tableNumber);
+
+
+                    conection.Open();
+                    command.ExecuteNonQuery();
+                    conection.Close();
+                    return true;
+                }
+            
+            
+            
+
+
 
         }
 

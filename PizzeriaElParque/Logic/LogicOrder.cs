@@ -9,48 +9,64 @@ namespace Logic
 {
     public class LogicOrder
     {
-        DataOrder dataLO = new DataOrder();
+        DataOrder orderInData = new DataOrder();
+       
+        /// <summary>
+        /// Call insertOrden to Data
+        /// </summary>
+        /// <param name="orderToInsert"> Object</param>
+        /// <returns> Boolean</returns>
+        public Boolean insertOrder(Order orderToInsert) {
 
+            return orderInData.insertOrder(orderToInsert);
+        }
+
+
+      
+
+        /// <summary>
+        /// Call to insertOrder in the Data
+        /// </summary>
+        /// <param name="lineOrderToAdd"> Object</param>
+        /// <returns> Boolean </returns>
+        public bool insertLineOders(LineOrder lineOrderToAdd)
+        {
+           
+
+           return  orderInData.insertLineOrder(lineOrderToAdd);
+
+           
+        }
         public List<LineOrder> ConsulLineOders(int IDProduct)
         {
             List<LineOrder> orders = new List<LineOrder>();
 
-            orders = dataLO.ConsultLineOder(IDProduct);
+            orders = orderInData.ConsultLineOder(IDProduct);
 
             return orders;
         }
-
-        public bool insertLineOders(int quantity, DateTime date, DateTime hour, int orderId, int productId)
-        {
-           
-
-            dataLO.insertLineOrder(quantity, date, hour, orderId, productId);
-
-            return true;
-        }
-
         public bool modifytLineOders(int quantity, DateTime date, DateTime hour, int orderId, int productId, int lineOrderID)
         {
 
 
-            dataLO.modifyLineOrder(quantity, date, hour, orderId, productId, lineOrderID);
+            orderInData.modifyLineOrder(quantity, date, hour, orderId, productId, lineOrderID);
 
             return true;
         }
 
         public int lastOrder() {
-            return dataLO.LastOrder();
+            return orderInData.LastOrder();
         }
 
 
 
-        public List<Order> ConsulOders()
+        public List<Order> consultOrders()
         {
             List<Order> orders = new List<Order>();
             return orders;
         }
 
-        public Order ConsultOder(String Order_ID)
+        public Order consultOrder(String Order_ID)
         {
             Order order = new Order();
             return order;

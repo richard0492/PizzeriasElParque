@@ -80,7 +80,7 @@ namespace Logic
         /// </summary>
         /// <param name="Product_Code"> Product code to be consulted</param>
         /// <returns>object product</returns>
-        public List<Product> consultProductObject(String Product_Code)
+        public Product consultProductObject(String Product_Code)
         {
             return dataProducts.ConsultProduct(Product_Code);
 

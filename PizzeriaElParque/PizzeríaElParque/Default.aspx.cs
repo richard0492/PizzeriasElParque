@@ -86,7 +86,7 @@ namespace PizzeríaElParque
             string[] name;
 
             name = dlEmployees.SelectedItem.ToString().Split('/');
-
+            Session["ID"] = Convert.ToInt32(name[0]);
             typeUser = data.typeUser(Convert.ToInt32(name[0]));
 
 

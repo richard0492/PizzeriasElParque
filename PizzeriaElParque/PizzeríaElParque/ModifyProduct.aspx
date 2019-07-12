@@ -7,7 +7,7 @@
                 <div class="panel-body">
                     <center>
                     <div style="border: 2px solid #0000FF; text-align:center; width:90%; padding: 10px 10px; box-sizing: border-box; border-radius: 20px 20px 20px 20px;" class="form-inline" role="form">
-                       <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Moficar Producto</h1>
+                       <h1 style="font-family: 'Times New Roman'; font-weight: bold; color: #CC3300;">Modificar Producto</h1>
                         <hr style=" height: 2px; color:#0000FF; width: 90%;" noshade="noshade" />
 
                         <br /><br />
